@@ -5,7 +5,7 @@ If you like and use this module, please purchase AppGameKit.  Without it this pr
 AppGameKit can deploy apps to Windows, Mac, Linux, iOS, and Android and is available from The Game Creators at
 https://www.appgamekit.com/.
 
-AppGameKit for Python v2020.11.16
+AppGameKit for Python v2022.09.28
 
 **USEFUL LINKS**
 
@@ -28,10 +28,9 @@ AppGameKit and the AppGameKit Logo are copyright The Game Creators Ltd.  All Rig
 AppGameKit for Python is officially licensed by The Game Creators Ltd to Adam Biser.
 """
 from typing import Optional, Union
-import ctypes
 
 # PYD version
-__version__ = "2020.11.16"  # type: str
+__version__ = "2022.09.28"  # type: str
 
 # Anti-alias modes - set_antialias_mode
 AA_NONE = 0  # type: int
@@ -53,6 +52,10 @@ ANISOTROPIC_ROLLING_FRICTION = 2  # type: int
 AXIS_X = 0  # type: int
 AXIS_Y = 1  # type: int
 AXIS_Z = 2  # type: int
+
+# Ad content rating for AdMob - set_admob_child_rating
+ADMOB_NORMAL_ADS = 0  # type: int
+ADMOB_CHILD_SAFE_ADS = 1  # type: int
 
 # Ad banner sizes - create_advert, create_advert_ex
 ADVERT_BANNER = 0  # type: int
@@ -426,6 +429,81 @@ class Application:
 
     def __exit__(self, exc_type, exc_value, traceback):
         """Closes the AppGameKit window and cleans up resources."""
+        pass
+
+
+class PluginFunction:
+    """
+    A plugin function.
+    Use `import_plugin()` to load a plugin and its functions.
+    """
+    pass
+
+    def __init__(self, funcname: str, plugin: "Plugin", restype=None, *argtypes):
+        """
+        Creates a plugin function.
+
+        :param str funcname: The exported function name within the plugin library.
+        :param Plugin plugin: The plugin instance.
+        :param restype: The result type.
+        :param argtypes: The argument types.
+        """
+        pass
+
+    def __call__(self, *args):
+        """
+        Calls the plugin function.
+
+        :param args: The arguments.
+        :return: The result
+        """
+        pass
+
+    def __repr__(self):
+        """String representation."""
+        pass
+
+
+class Plugin:
+    """
+    A plugin for AppGameKit.
+    Use `import_plugin()` to load a plugin and its functions.
+
+    Functions are accessed either as callable attributes.
+    ie:
+    ::
+        plugin.function()
+    """
+    pass
+
+    def __init__(self, name):
+        """
+        Creates and initializes a plugin for usage.
+
+        :param name: The plugin name.
+        """
+        pass
+
+    @property
+    def name(self):
+        """The plugin name."""
+        pass
+
+    @property
+    def filename(self):
+        """The plugin's full filename."""
+        pass
+
+    def __repr__(self):
+        """String representation."""
+        pass
+
+    def __getattr__(self, name):
+        """
+        Access plugin functions as callable attributes.
+
+        Calling a functions that doesn't exist within the plugin raises an AttributeError.
+        """
         pass
 
 
@@ -1884,8 +1962,7 @@ def create_object_cylinder(height: Union[float, int], diameter: Union[float, int
     Creates a 3D cylinder with the given diameter and height, and an optional number of polygons.
 
     The segments parameter determines how many columns of polygons make up the cylinder and must be at least 3. The
-    formula for calculating the total number of polygons used in the cylinder is 3*segments. Returns an ID you can use
-    to reference this object in other commands.
+    formula for calculating the total number of polygons used in the cylinder is 3*segments.
 
     :param Union[float, int] height: The height of the cylinder.
     :param Union[float, int] diameter: The diameter of the base of the cylinder.
@@ -1901,8 +1978,7 @@ def create_object_id_cylinder(object_id: int, height: Union[float, int], diamete
     Creates a 3D cylinder with the given diameter and height, and an optional number of polygons.
 
     The segments parameter determines how many columns of polygons make up the cylinder and must be at least 3. The
-    formula for calculating the total number of polygons used in the cylinder is 3*segments. Returns an ID you can use
-    to reference this object in other commands.
+    formula for calculating the total number of polygons used in the cylinder is 3*segments.
 
     :param int object_id: The ID to use for the new object.
     :param Union[float, int] height: The height of the cylinder.
@@ -2137,7 +2213,8 @@ def create_object_id_sphere(object_id: int, diameter: Union[float, int], rows: i
 
     The rows parameter determines how many rows of polygons make up the sphere and must be at least 2. The columns
     parameter determines how many columns of polygons make up the sphere and must be at least 3. The formula for
-    calculating the total number of polygons used in the sphere is 2*columns*(rows-1).
+    calculating the total number of polygons used in the sphere is 2*columns*(rows-1). Returns an ID you can use to
+    reference this object in other commands.
 
     :param int object_id: The ID to use for the new object.
     :param Union[float, int] diameter: The diameter of the sphere.
@@ -2154,7 +2231,8 @@ def create_object_sphere(diameter: Union[float, int], rows: int, columns: int) -
 
     The rows parameter determines how many rows of polygons make up the sphere and must be at least 2. The columns
     parameter determines how many columns of polygons make up the sphere and must be at least 3. The formula for
-    calculating the total number of polygons used in the sphere is 2*columns*(rows-1).
+    calculating the total number of polygons used in the sphere is 2*columns*(rows-1). Returns an ID you can use to
+    reference this object in other commands.
 
     :param Union[float, int] diameter: The diameter of the sphere.
     :param int rows: The number of rows of polygons that make up the sphere.
@@ -2326,6 +2404,30 @@ def fix_object_to_bone(object_id: int, to_object_id: int, to_bone: int) -> None:
     pass    
 
 
+def fix_object_to_camera(object_id: int, to_camera_id: int) -> None:
+    """
+    Fixes an object to a camera so that any movement of the parent also affects the child. The object being fixed uses
+    its current position, rotation, and scale as an offset to the parent. For example if the camera was placed at 10,5,0
+    and an object was fixed to it with the current position 0,10,0 then the object would now inherit the position of the
+    camera, combine it with its own, and the object would be placed at 10,15,0. The same applies to rotation and
+    scaling, so if the camera was rotated around the Y axis then the object would rotate by the same amount.
+
+    Note that using `get_object_y()` on the child would only show its local position relative to its parent (in this
+    case it would return 10). To get the final world position of the child use `get_object_world_y()` on it, which in
+    this case would return 15. There is no limit to the number of objects a camera can have fixed to it, nor is there a
+    limit to objects being fixed to objects which are fixed to cameras, just don't create any loops.
+
+    An object can only be fixed to one thing at a time, fixing it to something else will remove it from its current
+    attachment (if any). To stop an object being fixed to anything set toObjID to 0 and it will become independent
+    again.
+
+    :param int object_id: The ID of the object to fix.
+    :param int to_camera_id: The ID of the camera to fix it to.
+    :rtype: None
+    """
+    pass    
+
+
 def fix_object_to_object(object_id: int, to_object_id: int) -> None:
     """
     Fixes an object to another object so that any movement of the parent also affects the child.
@@ -2337,8 +2439,10 @@ def fix_object_to_object(object_id: int, to_object_id: int) -> None:
     same amount. Note that using `get_object_y()` on the child would only show its local position relative to its parent
     (in this case it would return 10). To get the final world position of the child use `get_object_world_y()` on it,
     which in this case would return 15. There is no limit to the number of objects an object can have fixed to it, nor
-    is there a limit to objects being fixed to objects which are fixed to other objects, just don't create any loops. To
-    stop an object being fixed to anything set `to_object_id` to 0 and it will become independent again.
+    is there a limit to objects being fixed to objects which are fixed to other objects, just don't create any loops. An
+    object can only be fixed to one thing at a time, fixing it to something else will remove it from its current
+    attachment (if any). To stop an object being fixed to anything set `to_object_id` to 0 and it will become
+    independent again.
 
     :param int object_id: The ID of the object to fix.
     :param int to_object_id: The ID of the object to fix it to.
@@ -2483,6 +2587,83 @@ def get_camera_quat_y(camera_id: int) -> float:
 def get_camera_quat_z(camera_id: int) -> float:
     """
     Returns the Z component of the camera's current rotation converted to a quaternion.
+
+    :param int camera_id: The ID of the camera to check, the main camera is ID 1.
+    :rtype: float
+    """
+    pass    
+
+
+def get_camera_world_angle_x(camera_id: int) -> float:
+    """
+    Returns the X component of the camera's current rotation converted to Euler angles after all transformations due to
+    `fix_camera_to_object()`.
+
+    :param int camera_id: The ID of the camera to check, the main camera is ID 1.
+    :rtype: float
+    """
+    pass    
+
+
+def get_camera_world_angle_y(camera_id: int) -> float:
+    """
+    Returns the Y component of the camera's current rotation converted to Euler angles after all transformations due to
+    `fix_camera_to_object()`.
+
+    :param int camera_id: The ID of the camera to check, the main camera is ID 1.
+    :rtype: float
+    """
+    pass    
+
+
+def get_camera_world_angle_z(camera_id: int) -> float:
+    """
+    Returns the Z component of the camera's current rotation converted to Euler angles after all transformations due to
+    `fix_camera_to_object()`.
+
+    :param int camera_id: The ID of the camera to check, the main camera is ID 1.
+    :rtype: float
+    """
+    pass    
+
+
+def get_camera_world_quat_w(camera_id: int) -> float:
+    """
+    Returns the W component of the camera's current rotation converted to a quaternion after all transformations due to
+    `fix_camera_to_object()`.
+
+    :param int camera_id: The ID of the camera to check, the main camera is ID 1.
+    :rtype: float
+    """
+    pass    
+
+
+def get_camera_world_quat_x(camera_id: int) -> float:
+    """
+    Returns the X component of the camera's current rotation converted to a quaternion after all transformations due to
+    `fix_camera_to_object()`.
+
+    :param int camera_id: The ID of the camera to check, the main camera is ID 1.
+    :rtype: float
+    """
+    pass    
+
+
+def get_camera_world_quat_y(camera_id: int) -> float:
+    """
+    Returns the Y component of the camera's current rotation converted to a quaternion after all transformations due to
+    `fix_camera_to_object()`.
+
+    :param int camera_id: The ID of the camera to check, the main camera is ID 1.
+    :rtype: float
+    """
+    pass    
+
+
+def get_camera_world_quat_z(camera_id: int) -> float:
+    """
+    Returns the Z component of the camera's current rotation converted to a quaternion after all transformations due to
+    `fix_camera_to_object()`.
 
     :param int camera_id: The ID of the camera to check, the main camera is ID 1.
     :rtype: float
@@ -8777,22 +8958,6 @@ def get_fullscreen_advert_loaded_admob() -> bool:
     pass    
 
 
-def get_fullscreen_advert_loaded_amazon() -> bool:
-    """
-    Returns True if there is an Amazon interstitial ad preloaded and ready to be displayed, otherwise False.
-
-    If so you can display it with `show_fullscreen_advert_amazon()`. Adverts are preloaded as soon as you set your
-    Amazon details and after every fullscreen advert is dismissed by the user. If this command continues to return False
-    then ad loading may have failed due to the provider running out of ads and AGK will stop trying to load them. In
-    this case you should try your other ad providers instead. If you find all your ad providers are returning False then
-    you can try calling `show_fullscreen_advert_amazon()` anyway, it will not display anything as there is nothing
-    loaded, but it will restart the loading process to see if any new adverts have become available.
-
-    :rtype: bool
-    """
-    pass    
-
-
 def get_fullscreen_advert_loaded_chartboost() -> bool:
     """
     Returns True if there is an Chartboost interstitial ad preloaded and ready to be displayed, otherwise False.
@@ -8865,6 +9030,19 @@ def get_reward_ad_rewarded_chartboost() -> bool:
     `reset_reward_admob()`.
 
     :rtype: bool
+    """
+    pass    
+
+
+def get_reward_ad_value_admob() -> int:
+    """
+    Returns the value of the currently loaded reward ad, this will return 0 if the reward value is unknown. If no reward
+    ad is currently loaded then this value is undefined, it might be 0 or it might be the value of a previous ad. You
+    should ask the user if they want to view the reward ad before showing it, along with the reward they will get for
+    doing so. You can use this value function to determine an appropriate reward. This value will remain unchanged if
+    `reset_reward_admob()` is called.
+
+    :rtype: int
     """
     pass    
 
@@ -8962,6 +9140,17 @@ def reset_reward_chartboost() -> None:
     pass    
 
 
+def set_admob_child_rating(rating: int) -> None:
+    """
+    Sets the content rating for AdMob ads if your app is targeted at children. This must be called before
+    `set_admob_details()`.
+
+    :param int rating: 0 (ADMOB_NORMAL_ADS) = normal ads, 1 (ADMOB_CHILD_SAFE_ADS) = child safe ads.
+    :rtype: None
+    """
+    pass    
+
+
 def set_admob_details(ad_unit_id: str) -> None:
     """
     Sets your AdMob account details to be used by banner ads and interstitial (fullscreen) ads.
@@ -9000,9 +9189,8 @@ def set_admob_testing(enabled: Union[bool, int]) -> None:
     Sets whether the AdMob ads will be test ads or paying ads.
 
     This should be called before `set_admob_details()` to ensure all ads are test ads. By default paying ads will be
-    shown. Note that at the current time test mode does not appear to be working with AdMob reward videos, they will
-    fail to load. This may be fixed by AdMob in the future. Note that if you display paying ads when testing you must
-    not click on them or your AdMob account may be suspended.
+    shown. Note that if you display paying ads when testing you must not click on them or your AdMob account may be
+    suspended.
 
     :param Union[bool, int] enabled: False to show paying ads, True to show test ads.
     :rtype: None
@@ -9080,34 +9268,6 @@ def set_advert_visible(visible: Union[bool, int]) -> None:
     pass    
 
 
-def set_amazon_ad_details(key: str) -> None:
-    """
-    Sets your Amazon Ads account details to be used by interstitial (fullscreen) ads.
-
-    After calling this command an attempt will be made to cache an interstitial so you can display it immediately later.
-    You can check the progress of this by using `get_fullscreen_advert_loaded_amazon()`.
-
-    Amazon ads are currently supported by iOS and Android.
-
-    :param str key: Ad unit ID as provided by Amazon.
-    :rtype: None
-    """
-    pass    
-
-
-def set_amazon_ad_testing(enabled: Union[bool, int]) -> None:
-    """
-    Sets whether the Amazon Ads will be test ads or paying ads.
-
-    This should be called before `set_amazon_ad_details()` to ensure all ads are test ads. By default paying ads will be
-    shown.
-
-    :param Union[bool, int] enabled: False to show paying ads, True to show test ads.
-    :rtype: None
-    """
-    pass    
-
-
 def set_chartboost_details(key1: str, key2: str) -> None:
     """
     Sets your Chartboost account details to be used by interstitial (fullscreen) ads and reward video ads.
@@ -9149,22 +9309,6 @@ def show_fullscreen_advert_admob() -> None:
     it will be displayed immediately, otherwise it will attempt to load an ad for next time you call this command.
     Failure to load an ad may be because the ad provider has run out of ads to show to users in a particular country.
     You can check if an ad is waiting to be displayed with `get_fullscreen_advert_loaded_admob()`. Your app will be
-    paused when the advert is displayed, and will resume when the advert is dismissed.
-
-    :rtype: None
-    """
-    pass    
-
-
-def show_fullscreen_advert_amazon() -> None:
-    """
-    Creates a fullscreen (interstitial) advert for revenue generation using Amazon Ads.
-
-    Before calling this function you must have set your ad account details with `set_amazon_ad_details()`. Both iOS and
-    Android use caching to preload ads before displaying them. If an ad has been loaded when you call this command then
-    it will be displayed immediately, otherwise it will attempt to load an ad for next time you call this command.
-    Failure to load an ad may be because the ad provider has run out of ads to show to users in a particular country.
-    You can check if an ad is waiting to be displayed with `get_fullscreen_advert_loaded_amazon()`. Your app will be
     paused when the advert is displayed, and will resume when the advert is dismissed.
 
     :rtype: None
@@ -9521,7 +9665,7 @@ def byte_len(text: str) -> int:
     Returns the number of bytes in the given string.
 
     Note that for strings encoded in UTF-8 this may not be equal to the number of characters in the string, as each
-    character can use up to 4 bytes. To determine the number of characters in a string use the `len()` command.
+    character can use up to 4 bytes.
 
     :param str text: The string to measure the length of.
     :rtype: int
@@ -10049,6 +10193,72 @@ def get_display_aspect() -> float:
     pass    
 
 
+def get_display_cutout_bottom(index: int) -> float:
+    """
+    Returns the bottom of the specified display cutout. The Top/Bottom/Left/Right display cutout commands return the
+    bounding box that covers the cutout in virtual resolution coordinates. Anthing placed within those coordinates can
+    be assumed to be covered by the cutout.
+
+    The index must be between 0 and `get_display_num_cutouts()` - 1.
+
+    :param int index: The index of the display cutout to return, starting at 0.
+    :rtype: float
+    """
+    pass    
+
+
+def get_display_cutout_left(index: int) -> float:
+    """
+    Returns the left of the specified display cutout. The Top/Bottom/Left/Right display cutout commands return the
+    bounding box that covers the cutout in virtual resolution coordinates. Anthing placed within those coordinates can
+    be assumed to be covered by the cutout.
+
+    The index must be between 0 and `get_display_num_cutouts()` - 1.
+
+    :param int index: The index of the display cutout to return, starting at 0.
+    :rtype: float
+    """
+    pass    
+
+
+def get_display_cutout_right(index: int) -> float:
+    """
+    Returns the right of the specified display cutout. The Top/Bottom/Left/Right display cutout commands return the
+    bounding box that covers the cutout in virtual resolution coordinates. Anthing placed within those coordinates can
+    be assumed to be covered by the cutout.
+
+    The index must be between 0 and `get_display_num_cutouts()` - 1.
+
+    :param int index: The index of the display cutout to return, starting at 0.
+    :rtype: float
+    """
+    pass    
+
+
+def get_display_cutout_top(index: int) -> float:
+    """
+    Returns the top of the specified display cutout. The Top/Bottom/Left/Right display cutout commands return the
+    bounding box that covers the cutout in virtual resolution coordinates. Anthing placed within those coordinates can
+    be assumed to be covered by the cutout.
+
+    The index must be between 0 and `get_display_num_cutouts()` - 1.
+
+    :param int index: The index of the display cutout to return, starting at 0.
+    :rtype: float
+    """
+    pass    
+
+
+def get_display_num_cutouts() -> int:
+    """
+    Returns the number of cutouts on the current device screen. Always returns 0 on Android 8 and below, and iOS 10 and
+    below. You can retrieve details about each cutout by using the `get_display_cutout_top()` commands.
+
+    :rtype: int
+    """
+    pass    
+
+
 def get_expansion_file_error() -> int:
     """
     Returns the error code of the most recent error that occurred when downloading the expansion file.
@@ -10092,6 +10302,43 @@ def get_expansion_file_state() -> int:
      * 3 if everything has completed and the file exists.
 
     :rtype: int
+    """
+    pass    
+
+
+def get_fractal_x(octaves: int, x: Union[float, int]) -> float:
+    """
+    Returns Fractal/Fractional Brownian Motion.
+
+    :param int octaves: number of fraction of noise to sum.
+    :param Union[float, int] x: x float coordinate.
+    :rtype: float
+    """
+    pass    
+
+
+def get_fractal_xy(octaves: int, x: Union[float, int], y: Union[float, int]) -> float:
+    """
+    Returns Fractal/Fractional Brownian Motion.
+
+    :param int octaves: number of fraction of noise to sum.
+    :param Union[float, int] x: x float coordinate.
+    :param Union[float, int] y: y float coordinate.
+    :rtype: float
+    """
+    pass    
+
+
+def get_fractal_xyz(octaves: int, x: Union[float, int], y: Union[float, int], z: Union[float,
+                    int]) -> float:
+    """
+    Returns Fractal/Fractional Brownian Motion.
+
+    :param int octaves: number of fraction of noise to sum.
+    :param Union[float, int] x: x float coordinate.
+    :param Union[float, int] y: y float coordinate.
+    :param Union[float, int] z: z float coordinate.
+    :rtype: float
     """
     pass    
 
@@ -10146,6 +10393,39 @@ def get_milliseconds() -> int:
     you call it.
 
     :rtype: int
+    """
+    pass    
+
+
+def get_noise_x(x: Union[float, int]) -> float:
+    """
+    Returns 1D Perlin simplex noise.
+
+    :param Union[float, int] x: x float coordinate.
+    :rtype: float
+    """
+    pass    
+
+
+def get_noise_xy(x: Union[float, int], y: Union[float, int]) -> float:
+    """
+    Returns 2D Perlin simplex noise.
+
+    :param Union[float, int] x: x float coordinate.
+    :param Union[float, int] y: y float coordinate.
+    :rtype: float
+    """
+    pass    
+
+
+def get_noise_xyz(x: Union[float, int], y: Union[float, int], z: Union[float, int]) -> float:
+    """
+    Returns 3D Perlin simplex noise.
+
+    :param Union[float, int] x: x float coordinate.
+    :param Union[float, int] y: y float coordinate.
+    :param Union[float, int] z: z float coordinate.
+    :rtype: float
     """
     pass    
 
@@ -10256,6 +10536,46 @@ def get_screen_bounds_right() -> float:
     visible area and the start of the black border, and the right bound is the end of the black border and the edge of
     the screen. If there is no black border to the right then the right bound will always be equal to
     `get_virtual_width()`.
+
+    :rtype: float
+    """
+    pass    
+
+
+def get_screen_bounds_safe_bottom() -> float:
+    """
+    Returns the bottom of the screen in virtual coordinates, avoiding any display cutouts. This is similar to
+    `get_screen_bounds_top()` except that it avoids display cutouts.
+
+    :rtype: float
+    """
+    pass    
+
+
+def get_screen_bounds_safe_left() -> float:
+    """
+    Returns the left of the screen in virtual coordinates, avoiding any display cutouts. This is similar to
+    `get_screen_bounds_top()` except that it avoids display cutouts.
+
+    :rtype: float
+    """
+    pass    
+
+
+def get_screen_bounds_safe_right() -> float:
+    """
+    Returns the right of the screen in virtual coordinates, avoiding any display cutouts. This is similar to
+    `get_screen_bounds_top()` except that it avoids display cutouts.
+
+    :rtype: float
+    """
+    pass    
+
+
+def get_screen_bounds_safe_top() -> float:
+    """
+    Returns the top of the screen in virtual coordinates, avoiding any display cutouts. This is similar to
+    `get_screen_bounds_top()` except that it avoids display cutouts.
 
     :rtype: float
     """
@@ -10479,6 +10799,26 @@ def hex_to_base64(text: str) -> str:
     pass    
 
 
+def is_dark_theme() -> int:
+    """
+    On Android and iOS this returns 1 if the operating system is set to use a dark theme, you can use this to switch to
+    a dark theme in your app. On other platforms this will always return 0.
+
+    :rtype: int
+    """
+    pass    
+
+
+def is_pin_app_available() -> int:
+    """
+    On Android this will return 1 if the command `pin_app()` is available on this device. Otherwise it will return 0,
+    which means that `pin_app()` will have no effect.
+
+    :rtype: int
+    """
+    pass    
+
+
 def is_supported_depth_texture() -> bool:
     """
     This command returns True if the current device supports using depth images with `set_render_to_image()`.
@@ -10534,6 +10874,18 @@ def minimize_app() -> None:
     it will do nothing as a user must minimize the app by pressing the home button. On desktop platforms the window can
     be restored with `restore_app()`.
 
+    :rtype: None
+    """
+    pass    
+
+
+def pin_app(enable: int) -> None:
+    """
+    On Android this will pin the app to the screen to prevent the user accidentally leaving the app. Optionally the
+    device can be locked whilst the app is pinned so it must be unlocked to open any other apps, this is defined in the
+    device settings. The user will be asked if they want to allow this before it actually takes effect.
+
+    :param int enable: 1 to pin this app, 0 to unpin it.
     :rtype: None
     """
     pass    
@@ -11151,6 +11503,22 @@ def set_sync_rate(fps: Union[float, int], mode: int) -> None:
     pass    
 
 
+def setup_noise(frequency: Union[float, int], amplitude: Union[float, int], lacunarity: Union[float,
+                int], persistence: Union[float, int]) -> None:
+    """
+    Initialises Open Simplex noise generation.
+
+    :param Union[float, int] frequency: Frequency (width) of the first octave of noise e.g. 1.0.
+    :param Union[float, int] amplitude: Amplitude (height) of the first octave of noise e.g. 1.0.
+    :param Union[float, int] lacunarity: Lacunarity specifies the frequency multiplier between successive octaves e.g.
+        2.0.
+    :param Union[float, int] persistence: Persistence is the loss of amplitude between successive octaves (usually
+        1/lacunarity).
+    :rtype: None
+    """
+    pass    
+
+
 def set_view_offset(x: Union[float, int], y: Union[float, int]) -> None:
     """
     Offset the screen viewport relative to the world, for example a view offset of 0,20 will move the screen down by 20
@@ -11692,6 +12060,15 @@ def world_to_screen_y(y: Union[float, int]) -> float:
 
     :param Union[float, int] y: The world Y coordinate to convert.
     :rtype: float
+    """
+    pass    
+
+
+def get_error_mode() -> int:
+    """
+    Returns the current error mode for AGK. 0=ignore, 1=report, 2=stop.
+
+    :rtype: int
     """
     pass    
 
@@ -12385,6 +12762,17 @@ def game_center_submit_score(score: int, board_id: str) -> None:
     pass    
 
 
+def get_app_receipt() -> str:
+    """
+    Returns the app receipt that contains a list of all purchases as a base64 encoded string. This can be sent to a
+    server you control to validate the purchases, including the purchase of the app itself. Only available on iOS, other
+    platforms will return an empty string.
+
+    :rtype: str
+    """
+    pass    
+
+
 def get_clipboard_text() -> str:
     """
     Gets any text currently held in the device clipboard, the text remains in the clipboard so it can still be used by
@@ -12492,10 +12880,35 @@ def get_in_app_purchase_available(product_id: int) -> bool:
     """
     Returns True if the extra content has been purchased and is therefore available.
 
-    Returns False if the content is not available. Currently this command is only supported on iOS and Android.
+    Returns False if the content is not available. It is recommended that you use the newer
+    `get_in_app_purchase_available2()` to get a more detailed response. Currently this command is only supported on iOS
+    and Android.
 
     :param int product_id: This ID corresponds to the product IDs that have been added e.g. your first product.
     :rtype: bool
+    """
+    pass    
+
+
+def get_in_app_purchase_available2(product_id: int) -> int:
+    """
+    A more detailed version of `get_in_app_purchase_available()` that gives the purchase state
+
+    Returns 0 if the product is not purchased
+
+    Returns 1 if the product is queued for purchased
+
+    Returns 2 if the product purchase is in progress
+
+    Returns 3 if the product purchase is pending (subject to payment clearance)
+
+    Returns 4 if the product is purchased
+
+    You should only reward the user once the product reaches state 4 (purchased). Currently this command is only
+    supported on iOS and Android.
+
+    :param int product_id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :rtype: int
     """
     pass    
 
@@ -12534,20 +12947,124 @@ def get_in_app_purchase_signature(product_id: int) -> str:
 
     It is recommended that you pass this signature to a server to do the check so that the check cannot be bypassed.
 
+    This has been deprecated on iOS, you should use the `get_app_receipt()` command instead that will return a list of
+    all purchases related to the app.
+
     :param int product_id: The ID of the product to check. e.g. your first product ID is 0, your second is 1 etc.
     :rtype: str
     """
     pass    
 
 
-def get_in_app_purchase_state() -> int:
+def get_in_app_purchase_sub_num_plans(id: int) -> int:
     """
-    Return the current state of the attempt to activate content.
 
-    A value of 0 indicates that the process is on going, while 1 confirms the process is complete. Currently this
-    command is only supported on iOS and Android.
 
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
     :rtype: int
+    """
+    pass    
+
+
+def get_in_app_purchase_sub_plan_duration(id: int, plan_index: int, period_index: int) -> int:
+    """
+
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param int plan_index: The plan index.
+    :param int period_index: The period index.
+    :rtype: int
+    """
+    pass    
+
+
+def get_in_app_purchase_sub_plan_duration_unit(id: int, plan_index: int, period_index: int) -> str:
+    """
+
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param int plan_index: The plan index.
+    :param int period_index: The period index.
+    :rtype: str
+    """
+    pass    
+
+
+def get_in_app_purchase_sub_plan_num_periods(id: int, plan_index: int) -> int:
+    """
+
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param int plan_index: The plan index.
+    :rtype: int
+    """
+    pass    
+
+
+def get_in_app_purchase_sub_plan_payment_type(id: int, plan_index: int, period_index: int) -> int:
+    """
+
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param int plan_index: The plan index.
+    :param int period_index: The period index.
+    :rtype: int
+    """
+    pass    
+
+
+def get_in_app_purchase_sub_plan_price(id: int, plan_index: int, period_index: int) -> str:
+    """
+
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param int plan_index: The plan index.
+    :param int period_index: The period index.
+    :rtype: str
+    """
+    pass    
+
+
+def get_in_app_purchase_sub_plan_tags(id: int, plan_index: int) -> str:
+    """
+
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param int plan_index: The plan index.
+    :rtype: str
+    """
+    pass    
+
+
+def get_in_app_purchase_sub_plan_token(id: int, plan_index: int) -> str:
+    """
+
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param int plan_index: The plan index.
+    :rtype: str
+    """
+    pass    
+
+
+def get_in_app_purchase_token(product_id: int) -> str:
+    """
+    On Android this returns a unique token for the last purchase of the given item, this can be sent to your server to
+    check the validity of the purchase with Google, and to distinguish between different instances of a consumable
+    purchase. You should only reward the user once per token for consumable purchases, it is recommended that you store
+    a list of past tokens on a server so you can detect any token reuse, which could be used to cheat your system. Once
+    you have rewarded the user for a consumable purchase you must call `in_app_purchase_reset_purchase()` with the most
+    recent token to allow it to be purchased again.
+
+    On iOS this returns a transaction ID that changes with every purchase the user makes. It can't be used to check with
+    Apple if a transaction was genuine but it can be used to distinguish between multiple purchases of a consumable
+    item. You can pass this token to `in_app_purchase_reset_purchase()` to reset the purchase state to 0 but on iOS this
+    is not required.
+
+    This only works on Android and iOS, other platforms will return an empty string.
+
+    :param int product_id: The ID of the product to check. e.g. your first product ID is 0, your second is 1 etc.
+    :rtype: str
     """
     pass    
 
@@ -12626,9 +13143,8 @@ def get_smart_watch_state() -> int:
 
 def in_app_purchase_activate(product_id: int) -> None:
     """
-    Call this when you want to start the process of activating / unlocking extra content.
-
-    Currently this command is only supported on iOS and Android.
+    Call this when you want to start the process of purchasing a product. Currently this command is only supported on
+    iOS and Android.
 
     :param int product_id: This ID corresponds to the product IDs that have been added e.g. your first product.
     :rtype: None
@@ -12636,20 +13152,69 @@ def in_app_purchase_activate(product_id: int) -> None:
     pass    
 
 
-def in_app_purchase_add_product_id(product_id: str, consumable: Union[bool, int]) -> None:
+def in_app_purchase_activate_with_plan(id: int, plan_token: str) -> None:
+    """
+    Call this when you want to start the process of purchasing a product with a specific plan. Subscriptions can have
+    multiple purchase plans which you can enumerate with `get_in_app_purchase_sub_num_plans()`. To start a purchase with
+    a specific plan get the plan token with `get_in_app_purchase_sub_plan_token()` and then pass it to this command.
+    Currently this command is only supported on iOS and Android.
+
+    :param int id: this ID corresponds to the product IDs that have been added e.g. your first product.
+    :param str plan_token: The plan token.
+    :rtype: None
+    """
+    pass    
+
+
+def in_app_purchase_add_product_id(product_id: str, product_type: int) -> None:
     """
     Use this command to add any product IDs into the list e.g. com.yourcompany.yourproduct.iap.
 
-    The first product ID you add becomes 0, the second is 1 etc. You must also specify the type of product this is,
-    consumable (True) or non-consumable(False). Consumable products are like coins that can be bought again and again,
-    they are called Unmanaged items by Google Play. Non-consumable products are one off purchases like unlocking the
-    full version of an app, they are called managed items by Google Play.
-
-    Currently this command is only supported on iOS, Google Play, and Amazon. This must be called before
-    `in_app_purchase_setup()`, after that no further products can be added.
+    The first product ID you add becomes 0, the second is 1 etc. You must also specify the `product_type` of product
+    this is, non-consumable(0), consumable(0), or subscription(2). Previously consumable products were added as
+    `product_type`=1 but they are now added as `product_type`=0 and `in_app_purchase_reset_purchase()` is used to reset
+    a consumable to a purchasable state. Consumable products are like coins that can be bought again and again, whereas
+    non-consumable products are one off purchases like unlocking the full version of an app. In Google Play consumable
+    and non-consumable products are added the same way. Currently this command is only supported on iOS, Google Play,
+    and Amazon. This must be called before `in_app_purchase_setup()`, after that no further products can be added.
 
     :param str product_id: The product ID as specified in iTunes Connect or the Google Play developer console.
-    :param Union[bool, int] consumable: The type of product this is, consumable (True) or non consumable(False).
+    :param int product_type: The type of product this is, non consumable(0), consumable(0), or subscription(2).
+    :rtype: None
+    """
+    pass    
+
+
+def in_app_purchase_redeem_offer() -> None:
+    """
+    Call this command to show the redeem offer dialog provided by the device (if any). This currently only applies to
+    iOS, and will only work on iOS 14 or above, otherwise it will do nothing.
+
+    Android displays this option automatically when a user starts a purchase.
+
+    :rtype: None
+    """
+    pass    
+
+
+def in_app_purchase_reset_purchase(token: str) -> None:
+    """
+    Call this command to reset the purchase state of an individual product. On Android this must be called for
+    consumable products after you have dealt with a purchase to allow it to be purchased again. If you call this command
+    on a non-consumable purchase then that purchase will be reset to an unpurchased state and the user will have to pay
+    for it again, this should only be used during testing.
+
+    Subscriptions cannot be reset and must be cancelled by the user through their Google Play account
+
+    On iOS this command is not necessary as it automatically allows consumable items to be purchased multiple times,
+    however this command could still be useful to reset the `get_in_app_purchase_available2()` state to 0 so you know it
+    has been dealt with. Reseting a non-consumable purchase on iOS will reset the state to 0 but iOS will still remember
+    the purchase and not charge the user again.
+
+    Use `get_in_app_purchase_token()` to get the token required to reset a purchase. Currently this command is only
+    supported on Android and iOS.
+
+    :param str token: The most recent token from `get_in_app_purchase_token()` for this product.
     :rtype: None
     """
     pass    
@@ -12660,11 +13225,14 @@ def in_app_purchase_restore() -> None:
     Restores any managed purchases made on this platform.
 
     For example if a user purchased at item then reinstalled the app the app would return 0 for
-    `get_in_app_purchase_available()` unless it was purchased again. Even though this wouldn't charge the user again for
-    managed items, Apple require you to have a button that calls this function instead of making the user go through the
-    purchase process again. After calling this command you can call `get_in_app_purchase_available()`. Currently this
-    command is only supported on iOS. This command is unnecessary on Android and Amazon as it automatically restores in
-    `in_app_purchase_setup()`.
+    `get_in_app_purchase_available()` unless it was purchased again or restored using this command.
+
+    Even though purchasing again wouldn't charge the user again for non-consumable items, using this restore command is
+    a better user experience. Apple require you to have a button that calls this function somewhere in your app.
+
+    After calling this command you can call `get_in_app_purchase_available2()` to check for purchases, it may take some
+    time for the purchase state to update, so check `get_in_app_purchase_available2()` regularly. This command is
+    supported by both iOS and Android.
 
     :rtype: None
     """
@@ -12673,13 +13241,8 @@ def in_app_purchase_restore() -> None:
 
 def in_app_purchase_set_keys(data1: str, data2: str) -> None:
     """
-    Sets any necessary internal data when setting up IAP for this platform.
-
-    Currently his only applies to Google Play and Ouya where you need to provide your public key in base64. This must be
-    called before `in_app_purchase_setup()`.
-
-    To find the public key for Google Play apps, open your application's details in the Google PlayDeveloper Console,
-    and click Services & APIs. The public key will be in the box titled "Your license key for this application".
+    This command is only used by Ouya where you need to provide your public key in base64. This must be called before
+    `in_app_purchase_setup()`.
 
     :param str data1: Public Key.
     :param str data2: Developer UUID (Ouya only).
@@ -12718,21 +13281,21 @@ def load_shared_variable(name: str, default_value: str) -> str:
     """
     Loads a variable that was saved by this app, or another app.
 
-    This only works on iOS, Android 10 and below, and HTML5 platforms. Apps can only share a variable if they meet
+    This only works on iOS, Android 9 and below, and HTML5 platforms. Apps can only share a variable if they meet
     certain requirements based on the platform.
 
     On iOS the apps must have the same Bundle Seed ID (also called App ID Prefix) and have the same explicit App ID up
     to the last dot. For example com.mycompany.mygroup.myapp1 and com.mycompany.mygroup.myapp2 would be able to share
     variables.
 
-    On Android 10 and below the apps must have the WRITE_EXTERNAL_STORAGE permission and have the same package name up
-    to the last dot. For example com.mycompany.mygroup.myapp1 and com.mycompany.mygroup.myapp2 would be able to share
+    On Android 9 and below the apps must have the WRITE_EXTERNAL_STORAGE permission and have the same package name up to
+    the last dot. For example com.mycompany.mygroup.myapp1 and com.mycompany.mygroup.myapp2 would be able to share
     variables.
 
     On Android shared variables are written to a user accessible location, so be aware that users may be able to read
     and/or edit the variables that you save.
 
-    On Android 11 or higher this command will not work as apps are restricted from writing to shared locations.
+    On Android 10 or higher this command will not work as apps are restricted from writing to shared locations.
 
     On HTML the apps must be hosted on the same domain, the values are stored as cookies.
 
@@ -12832,19 +13395,19 @@ def save_shared_variable(name: str, value: str) -> None:
     """
     Saves a variable so it can be accessed from other apps.
 
-    This only works on iOS, Android 10 and below, and HTML5 platforms. Apps can only share a variable if they meet
+    This only works on iOS, Android 9 and below, and HTML5 platforms. Apps can only share a variable if they meet
     certain requirements based on the platform.
 
     On iOS the apps must be created by the same Apple developer account, and have the same App Group added to their App
     IDs on the Apple developer portal. You will need to regenerate the provisioning profile after doing this. On iOS you
     must tell AGK what the App Group is by using `set_shared_variable_app_group()`.
 
-    On Android 10 and below the apps must have the WRITE_EXTERNAL_STORAGE permission and have the same package name up
-    to the last dot. For example com.mycompany.mygroup.myapp1 and com.mycompany.mygroup.myapp2 would be able to share
+    On Android 9 and below the apps must have the WRITE_EXTERNAL_STORAGE permission and have the same package name up to
+    the last dot. For example com.mycompany.mygroup.myapp1 and com.mycompany.mygroup.myapp2 would be able to share
     variables. On Android shared variables are written to a user accessible location, so be aware that users may be able
     to read and/or edit the variables that you save.
 
-    On Android 11 or higher this command will not work as apps are restricted from writing to shared locations.
+    On Android 10 or higher this command will not work as apps are restricted from writing to shared locations.
 
     On HTML the apps must be hosted on the same domain, the values are stored as cookies.
 
@@ -13265,12 +13828,15 @@ def get_documents_path() -> str:
     r"""
     Returns the directory that contains the current users documents.
 
-    On Windows this will be something like "C:\\Users\\Me\\My Documents", on iOS this will just be the app write
-    directory. By default all apps write to the system specified app settings folder, for example
-    "C:\\Users\\Me\\AppData" on Windows, "/home/user/.config" on Linux, and a protected app data folder on Android.
-    Where possible the contents pf the documents path is visible to the user, for example on Android 10 and below it
-    will be the sdcard folder. iOS and Android 11 and higher can't provide a publicly accessible location to write to so
-    will return the app write directory instead, which is not visible to the user.
+    On Windows this will be something like "C:\\Users\\Me\\My Documents". This is different from the usual write path
+    which is a system specified app write folder, for example "C:\\Users\\Me\\AppData" on Windows.
+
+    The documents folder path can be used to write files that are easily accessible by the user. On Android 9 and below
+    the documents path will be the internal storage root folder, on Android 10 and above it will be a folder in the
+    Andorid/data folder that is separate for each app but still accessible to the user.
+
+    iOS does not have a user accessible folder so `get_documents_path()` will just return the normal write path where
+    files will be inaccessible to the user.
 
     :rtype: str
     """
@@ -14574,14 +15140,12 @@ def get_image_filename(image_id: int) -> str:
     pass    
 
 
-def get_image_height(image_id: int) -> float:
+def get_image_height(image_id: int) -> int:
     """
     Returns the height of the image in pixels.
 
-    Even though this command returns a float the value is guaranteed to be a whole number.
-
     :param int image_id: The ID of the image to retrieve.
-    :rtype: float
+    :rtype: int
     """
     pass    
 
@@ -14602,14 +15166,12 @@ def get_image_size_from_file(filename: str) -> int:
     pass    
 
 
-def get_image_width(image_id: int) -> float:
+def get_image_width(image_id: int) -> int:
     """
     Returns the width of the image in pixels.
 
-    Even though this command returns a float the value is guaranteed to be a whole number.
-
     :param int image_id: The ID of the image to retrieve.
-    :rtype: float
+    :rtype: int
     """
     pass    
 
@@ -14745,7 +15307,7 @@ def load_subimage(parent_id: int, name: str) -> int:
     results, but you will have to watch out for pixel bleeding around the edges, and may need to give your sub images a
     1 pixel border of an appropriate color that it can safely steal from when filtering.
 
-    :param int parent_id: The image ID that holds the atlas texture, loaded previously with `load_image()`.
+    :param int parent_id: The image ID that holds the atlas texture, loaded previously.
     :param str name: The name of the sub image as stored in subimages.txt. Do not use a path before the name.
     :rtype: int
     """
@@ -14771,7 +15333,7 @@ def load_subimage_id(image_id: int, parent_id: int, name: str) -> None:
     1 pixel border of an appropriate color that it can safely steal from when filtering.
 
     :param int image_id: The image ID to use to reference this image later.
-    :param int parent_id: The image ID that holds the atlas texture, loaded previously with `load_image()`.
+    :param int parent_id: The image ID that holds the atlas texture, loaded previously.
     :param str name: The name of the sub image as stored in subimages.txt. Do not use a path before the name.
     :rtype: None
     """
@@ -14906,6 +15468,21 @@ def set_image_min_filter(image_id: int, mode: int) -> None:
 
     :param int image_id: The ID of the image to change.
     :param int mode: The filter mode to use, 0 (FILTER_NEAREST)=nearest, 1 (FILTER_LINEAR)=linear.
+    :rtype: None
+    """
+    pass    
+
+
+def set_image_subimages(image_id: int, filename: str) -> None:
+    """
+    Sets the sub image data for an atlas image, which is the layout of where each sub image is located within the atlas
+    image. Normally this is loaded automatically from the subimages.txt file when the image is loaded, but if this is
+    not possible then this command can be used to set that data. The file must be a valid subimages.txt file in the same
+    format as that specified in `load_subimage()` Unlike the normal load image command the file does not need to be
+    named subimages.txt, it can have any name and path.
+
+    :param int image_id: The ID of the image to change.
+    :param str filename: The path to the sub images file.
     :rtype: None
     """
     pass    
@@ -15965,7 +16542,8 @@ def set_edit_box_text_size(editbox_id: int, size: Union[float, int]) -> None:
     """
     Sets the height in world coordinates of the text in this edit box.
 
-    By default it is set to the edit box's height minus 2.
+    By default it is set to the edit box's height minus 2. `set_edit_box_text_size()` will not allow the text height to
+    be set greater than the height of the edit box.
 
     :param int editbox_id: The ID of the edit box to modify.
     :param Union[float, int] size: The new size of font to use.
@@ -17774,12 +18352,36 @@ def create_image_id_from_memblock(image_id: int, memblock_id: int) -> None:
     pass    
 
 
+def create_image_from_png_memblock(memblock_id: int) -> int:
+    """
+    Creates an image from a memblock. The memblock must exist, if the image exists it will be overwritten, if not it
+    will be created. The memblock must contain a valid PNG file such as one loaded with
+    `create_memblock_id_from_file(`memblock_id`, "image.png")`.
+
+    :param int memblock_id: The ID of the memblock to read, the memblock is unaffected by this command.
+    :rtype: int
+    """
+    pass    
+
+
+def create_image_id_from_png_memblock(image_id: int, memblock_id: int) -> None:
+    """
+    Creates an image from a memblock. The memblock must exist, if the image exists it will be overwritten, if not it
+    will be created. The memblock must contain a valid PNG file such as one loaded with
+    `create_memblock_id_from_file(`memblock_id`, "image.png")`.
+
+    :param int image_id: The ID of the image to create.
+    :param int memblock_id: The ID of the memblock to read, the memblock is unaffected by this command.
+    :rtype: None
+    """
+    pass    
+
+
 def create_memblock(size: int) -> int:
     """
     Creates a section of memory of the given size for read or write access.
 
-    The contents of the memory is undefined until you write to it. A memblock must not already exist with your chosen
-    `memblock_id`.
+    A memblock must not already exist with your chosen `memblock_id`.
 
     :param int size: The size of the memblock in bytes. max 100,000,000.
     :rtype: int
@@ -17791,8 +18393,7 @@ def create_memblock_id(memblock_id: int, size: int) -> None:
     """
     Creates a section of memory of the given size for read or write access.
 
-    The contents of the memory is undefined until you write to it. A memblock must not already exist with your chosen
-    `memblock_id`.
+    A memblock must not already exist with your chosen `memblock_id`.
 
     :param int memblock_id: The ID of the memblock you want to use.
     :param int size: The size of the memblock in bytes. max 100,000,000.
@@ -18095,6 +18696,31 @@ def create_memblock_id_from_sound(memblock_id: int, sound_id: int) -> None:
     pass    
 
 
+def create_music_from_ogg_memblock(memblock_id: int) -> int:
+    """
+    Creates a music entity from a memblock. The memblock must exist. This will create a new music ID and return it The
+    memblock must contain a valid OGG file such as one loaded with `create_memblock_id_from_file(`memblock_id`,
+    "music.ogg")`.
+
+    :param int memblock_id: The ID of the memblock to read, the memblock is unaffected by this command.
+    :rtype: int
+    """
+    pass    
+
+
+def create_music_id_from_ogg_memblock(music_id: int, memblock_id: int) -> None:
+    """
+    Creates a music entity from a memblock. The memblock must exist. This will create a new music ID and return it The
+    memblock must contain a valid OGG file such as one loaded with `create_memblock_id_from_file(`memblock_id`,
+    "music.ogg")`.
+
+    :param int music_id: The ID of the music to create.
+    :param int memblock_id: The ID of the memblock to read, the memblock is unaffected by this command.
+    :rtype: None
+    """
+    pass    
+
+
 def create_object_from_mesh_memblock(memblock_id: int) -> int:
     """
     Creates an object with a single mesh constructed from the given memblock.
@@ -18291,6 +18917,31 @@ def create_sound_id_from_memblock(sound_id: int, memblock_id: int) -> None:
     pass    
 
 
+def create_sound_from_ogg_memblock(memblock_id: int) -> int:
+    """
+    Creates an sound from a memblock. The memblock must exist, this creates a new sound and returns the ID. This will
+    not affect any sound instances already playing, only future ones. The memblock must contain a valid OGG file such as
+    one loaded with `create_memblock_id_from_file(`memblock_id`, "sound.ogg")`.
+
+    :param int memblock_id: The ID of the memblock to read, the memblock is unaffected by this command.
+    :rtype: int
+    """
+    pass    
+
+
+def create_sound_id_from_ogg_memblock(sound_id: int, memblock_id: int) -> None:
+    """
+    Creates an sound from a memblock. The memblock must exist, this creates a new sound and returns the ID. This will
+    not affect any sound instances already playing, only future ones. The memblock must contain a valid OGG file such as
+    one loaded with `create_memblock_id_from_file(`memblock_id`, "sound.ogg")`.
+
+    :param int sound_id: The ID of the sound to create or modify.
+    :param int memblock_id: The ID of the memblock to read, the memblock is unaffected by this command.
+    :rtype: None
+    """
+    pass    
+
+
 def delete_memblock(memblock_id: int) -> None:
     """
     Deletes the memblock at the given ID.
@@ -18371,6 +19022,26 @@ def get_memblock_int(memblock_id: int, offset: int) -> int:
     :param int memblock_id: The ID of the memblock to check.
     :param int offset: The offset from the start of the memblock of the value to return, between 0 and size.
     :rtype: int
+    """
+    pass    
+
+
+def get_memblock_sha1(memblock_id: int) -> str:
+    """
+    Hashes the memblock with SHA1 and returns the resulting hash.
+
+    :param int memblock_id: The ID of the memblock to hash.
+    :rtype: str
+    """
+    pass    
+
+
+def get_memblock_sha256(memblock_id: int) -> str:
+    """
+    Hashes the memblock with SHA256 and returns the resulting hash.
+
+    :param int memblock_id: The ID of the memblock to hash.
+    :rtype: str
     """
     pass    
 
@@ -18962,6 +19633,10 @@ def create_broadcast_listener(port: int) -> int:
     its IP address and another device can pick it up, read the IP and connect back to the first device to create a two-
     way connection.
 
+    Warning, if the device listening for broadcasts is an iOS device then it may not be able to receive broadcast
+    packets without permission from Apple. As of writing receiving is still allowed but sending requires permission from
+    Apple, this may change in future
+
     AGK networks are broadcast in this manner on port 45631 and send a packet containing the name of a network that has
     been hosted by another AGK device. By using a broadcast listener you can pick these messages up, extract the network
     names and display them to the user for them to choose which network they want to connect to.
@@ -18990,6 +19665,10 @@ def create_broadcast_listener_ipv6(ipv6: str, port: int) -> int:
     the local subnet. This can be useful for discovering devices as one device can send a broadcast packet containing
     its IP address and another device can pick it up, read the IP and connect back to the first device to create a two-
     way connection.
+
+    Warning, if the device listening for broadcasts is an iOS device then it may not be able to receive broadcast
+    packets without permission from Apple. As of writing receiving is still allowed but sending requires permission from
+    Apple, this may change in future
 
     AGK networks are broadcast in this manner on port 45631 and send a packet containing the name of a network that has
     been hosted by another AGK device. By using a broadcast listener you can pick these messages up, extract the network
@@ -19705,6 +20384,11 @@ def host_network(network_name: str, my_name: str, port: int, portv6: Optional[in
     network, this port will need forwarding to the host through any intervening firewall. The port value must be between
     1025 and 65535, and will fail if another application is already listening on that port.
 
+    Warning, if the device hosting the network is an iOS device then the broadcasting part of this process will fail
+    unless you get permission from Apple to send broadcast packets, see the following page to request permission https:
+    developer.apple.com/contact/request/networking-multicast. If you do not have the permission then devices should
+    still be able to join such a network if they have the IP address and port of the hosting device
+
     You must also specify a client name to use to identify your client, all client names must be unique. This name will
     be visible to all other clients. Clients will be added to the network automatically and can be counted using
     `get_network_num_clients()`. You can call `is_network_active()` immediately after this command to check that the
@@ -19768,6 +20452,10 @@ def join_network(network_name: str, my_name: str) -> int:
     broadcasts yourself, you could then display a list of discovered networks to the user to let them decide which one
     to connect to.
 
+    Warning, if the device listening for broadcasts is an iOS device then it may not be able to receive broadcast
+    packets without permission from Apple. As of writing receiving is still allowed but sending requires permission from
+    Apple, this may change in future.
+
     This function does not connect immediately, it returns a network ID and continues to attempt to connect in the
     background. You can detect when a connection is made by checking the `get_network_num_clients()` is greater than 1,
     indicating that at least the local client and server client have been detected. If `is_network_active()` returns 0
@@ -19805,6 +20493,10 @@ def join_network_ip(ip: str, port: int, my_name: str) -> int:
     You may detect all the networks available for connecting to by setting up a broadcast listener and listening for the
     broadcasts yourself, you could then display a list of discovered networks to the user to let them decide which one
     to connect to.
+
+    Warning, if the device listening for broadcasts is an iOS device then it may not be able to receive broadcast
+    packets without permission from Apple. As of writing receiving is still allowed but sending requires permission from
+    Apple, this may change in future.
 
     This function does not connect immediately, it returns a network ID and continues to attempt to connect in the
     background. You can detect when a connection is made by checking the `get_network_num_clients()` is greater than 1,
@@ -19930,6 +20622,10 @@ def send_udp_network_message(listener_id: int, message_id: int, ip: str, port: i
 
     You must specify a UDP listener to use as the source IP and port. This function will delete the specified message
     ID.
+
+    Warning, if the IP address is a broadcast or multicast address, e.g. 255.255.255.255 then this will fail to send on
+    iOS devices. To send broadcast or multicast packets requires permission from Apple, use the following page to
+    request it https: developer.apple.com/contact/request/networking-multicast.
 
     :param int listener_id: The ID of the listener to use as the source ip and port
     :param int message_id: The ID of the network message to send
@@ -22041,7 +22737,7 @@ def add_sprite_shape_box(sprite_id: int, x1: Union[float, int], y1: Union[float,
     :param Union[float, int] x1: The x coordinate of the top left corner of the new box in sprite space.
     :param Union[float, int] y1: The y coordinate of the top left corner of the new box in sprite space.
     :param Union[float, int] x2: The x coordinate of the bottom right corner of the new box in sprite space.
-    :param Union[float, int] y2: The x coordinate of the bottom right corner of the new box in sprite space.
+    :param Union[float, int] y2: The Y coordinate of the bottom right corner of the new box in sprite space.
     :param Union[float, int] angle: The angle of the box in radians.
     :rtype: None
     """
@@ -22854,6 +23550,46 @@ def get_sprite_physics_com_y(sprite_id: int) -> float:
     pass    
 
 
+def get_sprite_physics_gravity_scale(sprite_id: int) -> float:
+    """
+    Returns the gravity scale for the sprite.
+
+    :param int sprite_id: The ID of the sprite to modify.
+    :rtype: float
+    """
+    pass    
+
+
+def get_sprite_physics_inertia(sprite_id: int) -> float:
+    """
+    Returns the current inertia of the sprite.
+
+    :param int sprite_id: The ID of the sprite.
+    :rtype: float
+    """
+    pass    
+
+
+def get_sprite_physics_is_awake(sprite_id: int) -> bool:
+    """
+    Returns whether the sprite is awake or not.
+
+    :param int sprite_id: The ID of the sprite.
+    :rtype: bool
+    """
+    pass    
+
+
+def get_sprite_physics_is_bullet(sprite_id: int) -> bool:
+    """
+    Returns whether the sprite is set to be a bullet or not.
+
+    :param int sprite_id: The ID of the sprite.
+    :rtype: bool
+    """
+    pass    
+
+
 def get_sprite_physics_mass(sprite_id: int) -> float:
     """
     Returns the mass of the sprite in kilograms currently being used.
@@ -23604,6 +24340,17 @@ def set_sprite_offset(sprite_id: int, x: Union[float, int], y: Union[float, int]
     pass    
 
 
+def set_sprite_physics_allow_sleep(sprite_id: int, sleep: int) -> None:
+    """
+    Sets whether the sprite is allowed to sleep.
+
+    :param int sprite_id: The ID of the sprite to modify.
+    :param int sleep: 0 to disable sleeping, 1 to allow it.
+    :rtype: None
+    """
+    pass    
+
+
 def set_sprite_physics_angular_damping(sprite_id: int, damping: Union[float, int]) -> None:
     """
     Sets some damping on the sprite's angular movement which may simulate something like wind resistance.
@@ -23769,6 +24516,17 @@ def set_sprite_physics_friction(sprite_id: int, friction: Union[float, int],
     pass    
 
 
+def set_sprite_physics_gravity_scale(sprite_id: int, scale: Union[float, int]) -> None:
+    """
+    Sets the gravity scale for the sprite.
+
+    :param int sprite_id: The ID of the sprite to modify.
+    :param Union[float, int] scale: scaling value for the gravity.
+    :rtype: None
+    """
+    pass    
+
+
 def set_sprite_physics_impulse(sprite_id: int, x: Union[float, int], y: Union[float, int],
                                impulse_x: Union[float, int], impulse_y: Union[float, int]) -> None:
     """
@@ -23791,6 +24549,17 @@ def set_sprite_physics_impulse(sprite_id: int, x: Union[float, int], y: Union[fl
     :param Union[float, int] y: The Y coordinate of the impulse position in world coordinates.
     :param Union[float, int] impulse_x: The X component of the impulse direction.
     :param Union[float, int] impulse_y: The Y component of the impulse direction.
+    :rtype: None
+    """
+    pass    
+
+
+def set_sprite_physics_initially_awake(sprite_id: int, awake: int) -> None:
+    """
+    Sets whether the sprite is awake upon creation.
+
+    :param int sprite_id: The ID of the sprite to modify.
+    :param int awake: 0 for sleep, 1 for awake.
     :rtype: None
     """
     pass    
@@ -24110,7 +24879,7 @@ def set_sprite_shape_box(sprite_id: int, x1: Union[float, int], y1: Union[float,
     :param Union[float, int] x1: The x coordinate of the top left corner of the new box in sprite space.
     :param Union[float, int] y1: The y coordinate of the top left corner of the new box in sprite space.
     :param Union[float, int] x2: The x coordinate of the bottom right corner of the new box in sprite space.
-    :param Union[float, int] y2: The x coordinate of the bottom right corner of the new box in sprite space.
+    :param Union[float, int] y2: The Y coordinate of the bottom right corner of the new box in sprite space.
     :param Union[float, int] angle: The angle of the box in radians.
     :param Optional[int] shape_id: The ID of the shape to change, first shape is ID 1, 0=delete existing shapes and
         replace them with this new one.
@@ -24204,7 +24973,7 @@ def set_sprite_shape_polygon(sprite_id: int, total_points: int, point: int, x: U
 
     :param int sprite_id: The ID of the sprite to modify.
     :param int total_points: The number of points to use in the polygon, min 2, max 12.
-    :param int point: The index of the point to set, if this equals `total_points`-1 then the shape will be created.
+    :param int point: The index of the point to set, if it equals `total_points`-1 then the shape will be created.
     :param Union[float, int] x: X coordinate of the polygon to be added.
     :param Union[float, int] y: Y coordinate of the polygon to be added.
     :param Optional[int] shape_id: The ID of the shape to change, first shape is ID 1, 0=delete existing shapes and
@@ -25460,6 +26229,76 @@ def set_text_scissor(text_id: int, x1: Union[float, int], y1: Union[float, int],
     pass    
 
 
+def set_text_shader(text_id: int, shader_id: int) -> None:
+    """
+    Sets the shader used to draw this Text, loaded with Loadshader. By default Text objects are assigned an internal
+    shader that can handle 1 texture and a color. If you use a shader ID of 0 the Text is assigned the internal shader.
+
+    :param int text_id: The ID of the text to modify.
+    :param int shader_id: The ID of the shader to use.
+    :rtype: None
+    """
+    pass    
+
+
+def set_text_shader_constant_array_by_name(text_id: int, name: str, array_index: int,
+                                           value1: Union[float, int], value2: Union[float, int],
+                                           value3: Union[float, int], value4: Union[float,
+                                           int]) -> None:
+    """
+    Sets a shader constant array index by name, the constant must be marked as "uniform" in the shader source. Array
+    indices start at 0, if the array index is out of bounds then it will be ignored and no changes will be made. This
+    will affect only the specified text this shader. All shader values have 1 to 4 components, this command accepts 4
+    values and discards any that are not used by the named variable.
+
+    :param int text_id: The ID of the text to modify.
+    :param str name: The name of the constant to change, as defined in the shader source file.
+    :param int array_index: The element of the array to modify.
+    :param Union[float, int] value1: The X or R component of the new value, this value will always be used.
+    :param Union[float, int] value2: The Y or G component of the new value, if the constant only uses 1 component this
+        value is discarded.
+    :param Union[float, int] value3: The Z or B component of the new value, if the constant only uses 2 components this
+        value is discarded.
+    :param Union[float, int] value4: The W or A component of the new value, if the constant only uses 3 components this
+        value is discarded.
+    :rtype: None
+    """
+    pass    
+
+
+def set_text_shader_constant_by_name(text_id: int, name: str, value1: Union[float, int],
+                                     value2: Union[float, int], value3: Union[float, int],
+                                     value4: Union[float, int]) -> None:
+    """
+    Sets a shader constant for a text by name, the constant must be marked as "uniform" in the shader source. The Text
+    will set the specified constant to this value for any shader that it is applied to it. All shader values have 1 to 4
+    components, this command accepts 4 values and discards any that are not used by the named variable.
+
+    :param int text_id: The ID of the text to modify.
+    :param str name: The name of the constant to change, as defined in the shader source file.
+    :param Union[float, int] value1: The X or R component of the new value, this value will always be used.
+    :param Union[float, int] value2: The Y or G component of the new value, if the constant only uses 1 component this
+        value is discarded.
+    :param Union[float, int] value3: The Z or B component of the new value, if the constant only uses 2 components this
+        value is discarded.
+    :param Union[float, int] value4: The W or A component of the new value, if the constant only uses 3 components this
+        value is discarded.
+    :rtype: None
+    """
+    pass    
+
+
+def set_text_shader_constant_default(text_id: int, name: str) -> None:
+    """
+    Stops a text setting the given constant name in its shaders and uses the shader's default value from now on.
+
+    :param int text_id: The ID of the text to modify.
+    :param str name: The name of the constant to stop changing.
+    :rtype: None
+    """
+    pass    
+
+
 def set_text_size(text_id: int, size: Union[float, int]) -> None:
     """
     Sets the size of the text object, default is 4.
@@ -25828,6 +26667,16 @@ def add_tween_chain_text(chain_id: int, tween_id: int, text_id: int, delay: Opti
     pass    
 
 
+def clear_tween_camera(tween_id: int) -> None:
+    """
+    Clears all tweens for the camera tween.
+
+    :param int tween_id: ID of the tween.
+    :rtype: None
+    """
+    pass    
+
+
 def clear_tween_chain(chain_id: int) -> None:
     """
     Empties a chain of all tweens and stops any that were running.
@@ -25835,6 +26684,56 @@ def clear_tween_chain(chain_id: int) -> None:
     Any tweens that were added to it are unaffected and can be used in future chains.
 
     :param int chain_id: ID of the tween chain to clear.
+    :rtype: None
+    """
+    pass    
+
+
+def clear_tween_char(tween_id: int) -> None:
+    """
+    Clears all tweens for the char tween.
+
+    :param int tween_id: ID of the tween.
+    :rtype: None
+    """
+    pass    
+
+
+def clear_tween_custom(tween_id: int) -> None:
+    """
+    Clears all tweens for the custom tween.
+
+    :param int tween_id: ID of the tween.
+    :rtype: None
+    """
+    pass    
+
+
+def clear_tween_object(tween_id: int) -> None:
+    """
+    Clears all tweens for the object tween.
+
+    :param int tween_id: ID of the tween.
+    :rtype: None
+    """
+    pass    
+
+
+def clear_tween_sprite(tween_id: int) -> None:
+    """
+    Clears all tweens for the sprite tween.
+
+    :param int tween_id: ID of the tween.
+    :rtype: None
+    """
+    pass    
+
+
+def clear_tween_text(tween_id: int) -> None:
+    """
+    Clears all tweens for the text tween.
+
+    :param int tween_id: ID of the tween.
     :rtype: None
     """
     pass    
@@ -26132,6 +27031,18 @@ def get_tween_chain_playing(chain_id: int) -> bool:
     pass    
 
 
+def get_tween_char_end_time(tween_id: int, text_id: int, char_id: int) -> float:
+    """
+    Returns the end time of the tween char.
+
+    :param int tween_id: ID of the tween.
+    :param int text_id: ID of the text.
+    :param int char_id: Index of the character to check, indices start at 0, if out of range it is ignored.
+    :rtype: float
+    """
+    pass    
+
+
 def get_tween_char_exists(tween_id: int) -> bool:
     """
     Returns True if a tween with the given ID exists and it is a char tween, otherwise False.
@@ -26152,6 +27063,28 @@ def get_tween_char_playing(tween_id: int, text_id: int, char_index: int) -> bool
     :param int text_id: ID of the text to check.
     :param int char_index: Index of the character to check, indices start at 0, if out of range it is ignored.
     :rtype: bool
+    """
+    pass    
+
+
+def get_tween_char_time(tween_id: int, text_id: int, char_id: int) -> float:
+    """
+    Returns the current time of the tween char.
+
+    :param int tween_id: ID of the tween.
+    :param int text_id: ID of the text.
+    :param int char_id: Index of the character to check, indices start at 0, if out of range it is ignored.
+    :rtype: float
+    """
+    pass    
+
+
+def get_tween_custom_end_time(tween_id: int) -> float:
+    """
+    Returns the end time of the custom tween.
+
+    :param int tween_id: ID of the tween.
+    :rtype: float
     """
     pass    
 
@@ -26258,12 +27191,33 @@ def get_tween_custom_playing(tween_id: int) -> bool:
     pass    
 
 
+def get_tween_custom_time(tween_id: int) -> float:
+    """
+    Returns the current time of the custom tween.
+
+    :param int tween_id: ID of the tween.
+    :rtype: float
+    """
+    pass    
+
+
 def get_tween_exists(tween_id: int) -> bool:
     """
     Returns True if a tween of any type exists at the given ID, False otherwise.
 
     :param int tween_id: ID of the tween to check.
     :rtype: bool
+    """
+    pass    
+
+
+def get_tween_object_end_time(tween_id: int, object_id: int) -> float:
+    """
+    Returns the current end of the tween object.
+
+    :param int tween_id: ID of the tween.
+    :param int object_id: ID of the object.
+    :rtype: float
     """
     pass    
 
@@ -26291,6 +27245,28 @@ def get_tween_object_playing(tween_id: int, object_id: int) -> bool:
     pass    
 
 
+def get_tween_object_time(tween_id: int, object_id: int) -> float:
+    """
+    Returns the current time of the tween object.
+
+    :param int tween_id: ID of the tween.
+    :param int object_id: ID of the object.
+    :rtype: float
+    """
+    pass    
+
+
+def get_tween_sprite_end_time(tween_id: int, sprite_id: int) -> float:
+    """
+    Returns the end time of the tween sprite.
+
+    :param int tween_id: ID of the tween.
+    :param int sprite_id: ID of the sprite.
+    :rtype: float
+    """
+    pass    
+
+
 def get_tween_sprite_exists(tween_id: int) -> bool:
     """
     Returns True if a tween with the given ID exists and it is a sprite tween, otherwise False.
@@ -26314,6 +27290,28 @@ def get_tween_sprite_playing(tween_id: int, sprite_id: int) -> bool:
     pass    
 
 
+def get_tween_sprite_time(tween_id: int, sprite_id: int) -> float:
+    """
+    Returns the current time of the tween sprite.
+
+    :param int tween_id: ID of the tween.
+    :param int sprite_id: ID of the sprite.
+    :rtype: float
+    """
+    pass    
+
+
+def get_tween_text_end_time(tween_id: int, text_id: int) -> float:
+    """
+    Returns the end time of the tween text.
+
+    :param int tween_id: ID of the tween.
+    :param int text_id: ID of the text.
+    :rtype: float
+    """
+    pass    
+
+
 def get_tween_text_exists(tween_id: int) -> bool:
     """
     Returns True if a tween with the given ID exists and it is a text tween, otherwise False.
@@ -26333,6 +27331,17 @@ def get_tween_text_playing(tween_id: int, text_id: int) -> bool:
     :param int tween_id: ID of the tween to check.
     :param int text_id: ID of the text to check.
     :rtype: bool
+    """
+    pass    
+
+
+def get_tween_text_time(tween_id: int, text_id: int) -> float:
+    """
+    Returns the current time of the tween text.
+
+    :param int tween_id: ID of the tween.
+    :param int text_id: ID of the text.
+    :rtype: float
     """
     pass    
 
@@ -29020,7 +30029,7 @@ def enable_debug_log(enabled: Union[bool, int] = True) -> None:
     pass    
 
 
-def import_plugin(name: str, commands: Optional[str] = None) -> ctypes.CDLL:
+def import_plugin(name: str, commands: Optional[str] = None) -> Plugin:
     r"""
     Loads a Tier 1 plugin for use with AppGameKit for Python.
 
@@ -29030,16 +30039,10 @@ def import_plugin(name: str, commands: Optional[str] = None) -> ctypes.CDLL:
 
     Information on plugins: https://www.appgamekit.com/documentation/guides/14_plugins.htm
 
-    If a plugin relies upon other DLLs being in the working directory, remember that the working directory is most
-    likely going to be the Python interpreter's path so you'll need to change the working directory in your script:
-    ::
-        import os
-        os.chdir(appgamekit.get_read_path())
-
     :param str name: The name of the plugin to load.
     :param Optional[str] commands: A string containing the text that would normally be in the plugin's commands.txt
         file.
-    :rtype: ctypes.CDLL
+    :rtype: Plugin
     """
     pass    
 
@@ -29059,6 +30062,534 @@ def _get_plugin_string(pointer: int) -> str:
 
     :param int pointer: The char pointer returned by a plugin command.
     :rtype: str
+    """
+    pass    
+
+
+def _get_agk_function_ptr() -> int:
+    """
+    Internal use only.
+
+    Returns the function pointer used to initialize plugins.
+
+    :rtype: int
+    """
+    pass    
+
+
+def create_memblock_from_bytes(data: bytes) -> int:
+    """
+    Creates a memblock and populates it with the data from the given bytes object.
+
+    A memblock must not already exist with your chosen `memblock_id`.
+
+    :param bytes data: A bytes object.
+    :rtype: int
+    """
+    pass    
+
+
+def create_memblock_id_from_bytes(memblock_id: int, data: bytes) -> None:
+    """
+    Creates a memblock and populates it with the data from the given bytes object.
+
+    A memblock must not already exist with your chosen `memblock_id`.
+
+    :param int memblock_id: The ID of the memblock you want to use.
+    :param bytes data: A bytes object.
+    :rtype: None
+    """
+    pass    
+
+
+def set_memblock_bytes(memblock_id: int, offset: int, data: bytes) -> None:
+    """
+    Writes a bytes object at the given offset.
+
+    The offset must be less than the size of the memblock. The first value is at offset 0.
+
+    :param int memblock_id: The ID of the memblock.
+    :param int offset: The offset from the start of the memblock to write to, between 0 and size (exclusive).
+    :param bytes data: The bytes to write.
+    :rtype: None
+    """
+    pass    
+
+
+def get_memblock_bytes(memblock_id: int, start: Optional[int] = None,
+                       stop: Optional[int] = None) -> bytes:
+    """
+    Returns a bytes object with data from a memblock.
+
+    :param int memblock_id: The ID of the memblock.
+    :param Optional[int] start: An integer number specifying at which position to start.  Default is 0
+    :param Optional[int] stop: An integer number specifying at which position to stop (not included).  Defaults to the
+        size of the memblock.
+    :rtype: bytes
+    """
+    pass    
+
+
+def get_image_rgba_bytes(image_id: int) -> bytes:
+    """
+    Returns RGBA data from an image as a bytes object.
+
+    :param int image_id: The ID of the image.
+    :rtype: bytes
+    """
+    pass    
+
+
+def create_image_from_rgba_bytes(width: int, height: int, data: bytes) -> int:
+    """
+    Creates an image from a bytes object.
+
+    If the image exists it will be overwritten, if not it will be created.
+
+    The raw image data is in the format RGBA, with each component stored in a single byte, so each pixel takes up 4
+    bytes. The size of the image data can be calculated by width*height*4 bytes (for now bit depth can be assumed to be
+    32 bits = 4 bytes).
+
+    Note that due to little endian format writing the image data with bytes will result in offsets 0=R, 1=G, 2=B, 3=A.
+
+    The pixel data starts in the top left corner of the image an proceeds left to right then top to bottom resulting in
+    the image being stored as a sequence of rows ending in the bottom right corner.
+
+    This command uses a lot of GPU bandwidth so it is not recommended that this command be called every frame on large
+    images.
+
+    :param int width: The image width.
+    :param int height: The image height.
+    :param bytes data: A bytes object containing 32-bit RGBA data.
+    :rtype: int
+    """
+    pass    
+
+
+def create_image_id_from_rgba_bytes(image_id: int, width: int, height: int, data: bytes) -> None:
+    """
+    Creates an image from a bytes object.
+
+    If the image exists it will be overwritten, if not it will be created.
+
+    The raw image data is in the format RGBA, with each component stored in a single byte, so each pixel takes up 4
+    bytes. The size of the image data can be calculated by width*height*4 bytes (for now bit depth can be assumed to be
+    32 bits = 4 bytes).
+
+    Note that due to little endian format writing the image data with bytes will result in offsets 0=R, 1=G, 2=B, 3=A.
+
+    The pixel data starts in the top left corner of the image an proceeds left to right then top to bottom resulting in
+    the image being stored as a sequence of rows ending in the bottom right corner.
+
+    This command uses a lot of GPU bandwidth so it is not recommended that this command be called every frame on large
+    images.
+
+    :param int image_id: The ID of the image to create or modify.
+    :param int width: The image width.
+    :param int height: The image height.
+    :param bytes data: A bytes object containing 32-bit RGBA data.
+    :rtype: None
+    """
+    pass    
+
+
+def create_image_from_png_bytes(data: bytes) -> int:
+    """
+    Creates an image from a bytes object. If the image exists it will be overwritten, if not it will be created. The
+    bytes object must contain a valid PNG file such as one loaded with `create_memblock_id_from_file(`memblock_id`,
+    "image.png")`.
+
+    :param bytes data: A bytes object.
+    :rtype: int
+    """
+    pass    
+
+
+def create_image_id_from_png_bytes(image_id: int, data: bytes) -> None:
+    """
+    Creates an image from a bytes object. If the image exists it will be overwritten, if not it will be created. The
+    bytes object must contain a valid PNG file such as one loaded with `create_memblock_id_from_file(`memblock_id`,
+    "image.png")`.
+
+    :param int image_id: The ID of the image to create.
+    :param bytes data: A bytes object.
+    :rtype: None
+    """
+    pass    
+
+
+def create_sound_from_raw_bytes(channels: int, bits_per_sample: int, sample_rate: int,
+                                data: bytes) -> int:
+    """
+    Creates an sound from a bytes object.
+
+    This creates a new sound and returns the ID. This will not affect any sound instances already playing, only future
+    ones.
+
+    The bytes object holds raw sound data, for example in an 8bit stereo sound with 3 frames the raw data would look
+    like this:
+    ::
+        byte offset 0 = Frame 1, left channel data
+        byte offset 1 = Frame 1, right channel data
+        byte offset 2 = Frame 2, left channel data
+        byte offset 3 = Frame 2, right channel data
+        byte offset 4 = Frame 3, left channel data
+        byte offset 5 = Frame 3, right channel data
+
+    Returns the ID of the new sound.
+
+    :param int channels: The number of channels (1 or 2 supported).
+    :param int bits_per_sample: The bits per sample (8 or 16 supported).
+    :param int sample_rate: The sample rate of the sound.
+    :param bytes data: A bytes object.
+    :rtype: int
+    """
+    pass    
+
+
+def create_sound_id_from_raw_bytes(sound_id: int, channels: int, bits_per_sample: int,
+                                   sample_rate: int, data: bytes) -> None:
+    """
+    Creates an sound from a bytes object.
+
+    This creates a new sound and returns the ID. This will not affect any sound instances already playing, only future
+    ones.
+
+    The bytes object holds raw sound data, for example in an 8bit stereo sound with 3 frames the raw data would look
+    like this:
+    ::
+        byte offset 0 = Frame 1, left channel data
+        byte offset 1 = Frame 1, right channel data
+        byte offset 2 = Frame 2, left channel data
+        byte offset 3 = Frame 2, right channel data
+        byte offset 4 = Frame 3, left channel data
+        byte offset 5 = Frame 3, right channel data
+
+    Returns the ID of the new sound.
+
+    :param int sound_id: The ID of the sound to create or modify.
+    :param int channels: The number of channels (1 or 2 supported).
+    :param int bits_per_sample: The bits per sample (8 or 16 supported).
+    :param int sample_rate: The sample rate of the sound.
+    :param bytes data: A bytes object.
+    :rtype: None
+    """
+    pass    
+
+
+def create_sound_from_ogg_bytes(data: bytes) -> int:
+    """
+    Creates an sound from a bytes object. This creates a new sound and returns the ID. This will not affect any sound
+    instances already playing, only future ones. The bytes object must contain a valid OGG file such as one loaded with
+    `create_memblock_id_from_file(`memblock_id`, "sound.ogg")`.
+
+    :param bytes data: A bytes object.
+    :rtype: int
+    """
+    pass    
+
+
+def create_sound_id_from_ogg_bytes(sound_id: int, data: bytes) -> None:
+    """
+    Creates an sound from a bytes object. This creates a new sound and returns the ID. This will not affect any sound
+    instances already playing, only future ones. The bytes object must contain a valid OGG file such as one loaded with
+    `create_memblock_id_from_file(`memblock_id`, "sound.ogg")`.
+
+    :param int sound_id: The ID of the sound to create or modify.
+    :param bytes data: A bytes object.
+    :rtype: None
+    """
+    pass    
+
+
+def create_music_from_ogg_bytes(data: bytes) -> int:
+    """
+    Creates a music entity from a bytes object. This will create a new music ID and return it.  The bytes object must
+    contain a valid OGG file such as one loaded with `create_memblock_id_from_file(`memblock_id`, "music.ogg")`.
+
+    :param bytes data: A bytes object.
+    :rtype: int
+    """
+    pass    
+
+
+def create_music_id_from_ogg_bytes(music_id: int, data: bytes) -> None:
+    """
+    Creates a music entity from a bytes object. This will create a new music ID and return it.  The bytes object must
+    contain a valid OGG file such as one loaded with `create_memblock_id_from_file(`memblock_id`, "music.ogg")`.
+
+    :param int music_id: The ID of the music to create.
+    :param bytes data: A bytes object.
+    :rtype: None
+    """
+    pass    
+
+
+def add_object_mesh_from_bytes(object_id: int, data: bytes) -> None:
+    """
+    Adds a new mesh to the object, constructed from the given bytes object.
+
+    The first 4 bytes of the bytes object represent the number of vertices in the mesh.
+
+    The second 4 bytes represent the number of indices in the mesh, this may be 0 in which case every three vertices
+    represents a polygon, and no vertices can be shared. If the number of indices is greater than 0 then every three
+    indices represent a polygon and vertices may be shared between polygons. Indices start at 0 so index 0 references
+    the first vertex in the list.
+
+    The third 4 bytes represents the number of attributes per vertex, e.g. position, normals, and UV data are all
+    potential attributes, so a vertex containing all three would have 3 attributes. A vertex must have a position
+    attribute, everything else is optional.
+
+    The fourth 4 bytes represent the size of a single vertex in bytes, this can be calculated from the attribute data
+    but is given for convenience.
+
+    The fifth 4 bytes is offset for the beginning of the vertex data, so you can reach it easily.
+
+    The sixth 4 bytes is offset for the beginning of the index data, will be 0 if there are no indices.
+
+    After those 6 values, starting at offset 24, is the vertex attribute data. The vertex attribute data describes how
+    the vertex data is laid out, for example if it has normals, UV data, etc.
+
+    For each attribute there is a 1 byte data type, 1 byte component count, 1 byte normalize flag, 1 byte string length,
+    and X bytes of string data for the attribute name. The data type will be 0 for floats (used for almost everything,
+    e.g. position, normals, etc) or 1 for unsigned bytes (used for vertex colors).
+
+    The component count is the number of values per attribute, e.g. position has 3 components, x,y,z, UV data has 2
+    components, and vertex colors have 4 components. Note that any unsigned byte data type must have 4 components even
+    if some are unused.
+
+    The normalize flag is only used for unsigned byte data types and will convert values in the range 0-255 into 0.0-1.0
+    for use in a shader. Usually the normalize flag will be 1 for color attributes and 0 for everything else.
+
+    The string length byte must always be a multiple of 4 for alignment reasons, the string itself might have slightly
+    less characters but always round up to the nearest multiple of 4 for the string length value. e.g. a string of
+    length 5 should have a string length value of 8. Note that a string of 4 characters has a null terminator on the end
+    which makes it length 5, so even though it has a multiple of 4 characters already it must use a length value of 8
+    due to the null terminator.
+
+    The attribute name string will be used by the shader to recognise what the vertex data is, the attribute names
+    recognised by AGK are "position", "normal", "tangent", "binormal", "color", "uv", "uv1", "boneweights", and
+    "boneindices", however you may add attributes with any name you like as long as you write a matching shader that has
+    the same names. If you are not using your own shader and instead rely on AGK to draw the object then you must stick
+    to the above attribute names.
+
+    Following the attribute data is the raw vertex data, which usually starts with the "position" attribute. It will be
+    a 4 byte float for the X position, a 4 byte float for the Y position, and a 4 byte float for the Z position. This
+    continues for each attribute specified in the attribute data. Note that color data will always be 4 bytes in total,
+    1 unsigned byte for each color channel. You can access individual vertices by using the vertex size provided above
+    and the vertex index like so offset=vertexDataOffset+(vertexIndex*vertexSize).
+
+    Lastly is the index data, if present. Each index is a 4 byte integer which references a vertex in the vertex data.
+    Every three indices represents a polygon.
+
+    :param int object_id: The ID of the object to modify.
+    :param bytes data: A bytes object.
+    :rtype: None
+    """
+    pass    
+
+
+def create_object_from_mesh_bytes(data: bytes) -> int:
+    """
+    Creates an object with a single mesh constructed from the given bytes object.
+
+    Any subsequent changes to the bytes object will not affect the mesh, you should call `set_object_mesh_from_bytes()`
+    to modify an existing mesh.
+
+    The first 4 bytes of the bytes object represent the number of vertices in the mesh.
+
+    The second 4 bytes represent the number of indices in the mesh, this may be 0 in which case every three vertices
+    represents a polygon, and no vertices can be shared. If the number of indices is greater than 0 then every three
+    indices represent a polygon and vertices may be shared between polygons. Indices start at 0 so index 0 references
+    the first vertex in the list.
+
+    The third 4 bytes represents the number of attributes per vertex, e.g. position, normals, and UV data are all
+    potential attributes, so a vertex containing all three would have 3 attributes. A vertex must have a position
+    attribute, everything else is optional.
+
+    The fourth 4 bytes represent the size of a single vertex in bytes, this can be calculated from the attribute data
+    but is given for convenience.
+
+    The fifth 4 bytes is offset for the beginning of the vertex data, so you can reach it easily.
+
+    The sixth 4 bytes is offset for the beginning of the index data, will be 0 if there are no indices.
+
+    After those 6 values, starting at offset 24, is the vertex attribute data. The vertex attribute data describes how
+    the vertex data is laid out, for example if it has normals, UV data, etc.
+
+    For each attribute there is a 1 byte data type, 1 byte component count, 1 byte normalize flag, 1 byte string length,
+    and X bytes of string data for the attribute name. The data type will be 0 for floats (used for almost everything,
+    e.g. position, normals, etc) or 1 for unsigned bytes (used for vertex colors).
+
+    The component count is the number of values per attribute, e.g. position has 3 components, x,y,z, UV data has 2
+    components, and vertex colors have 4 components. Note that any unsigned byte data type must have 4 components even
+    if some are unused.
+
+    The normalize flag is only used for unsigned byte data types and will convert values in the range 0-255 into 0.0-1.0
+    for use in a shader. Usually the normalize flag will be 1 for color attributes and 0 for everything else.
+
+    The string length byte must always be a multiple of 4 for alignment reasons, the string itself might have slightly
+    less characters but always round up to the nearest multiple of 4 for the string length value. e.g. a string of
+    length 5 should have a string length value of 8. Note that a string of 4 characters has a null terminator on the end
+    which makes it length 5, so even though it has a multiple of 4 characters already it must use a length value of 8
+    due to the null terminator.
+
+    The attribute name string will be used by the shader to recognise what the vertex data is, the attribute names
+    recognised by AGK are "position", "normal", "tangent", "binormal", "color", "uv", "uv1", "boneweights", and
+    "boneindices", however you may add attributes with any name you like as long as you write a matching shader that has
+    the same names. If you are not using your own shader and instead rely on AGK to draw the object then you must stick
+    to the above attribute names.
+
+    Following the attribute data is the raw vertex data, which usually starts with the "position" attribute. It will be
+    a 4 byte float for the X position, a 4 byte float for the Y position, and a 4 byte float for the Z position. This
+    continues for each attribute specified in the attribute data. Note that color data will always be 4 bytes in total,
+    1 unsigned byte for each color channel. You can access individual vertices by using the vertex size provided above
+    and the vertex index like so offset=vertexDataOffset+(vertexIndex*vertexSize).
+
+    Lastly is the index data, if present. Each index is a 4 byte integer which references a vertex in the vertex data.
+    Every three indices represents a polygon.
+
+    :param bytes data: A bytes object to use to create the mesg.
+    :rtype: int
+    """
+    pass    
+
+
+def create_object_id_from_mesh_bytes(object_id: int, data: bytes) -> None:
+    """
+    Creates an object with a single mesh constructed from the given bytes object.
+
+    Any subsequent changes to the bytes object will not affect the mesh, you should call `set_object_mesh_from_bytes()`
+    to modify an existing mesh.
+
+    The first 4 bytes of the bytes object represent the number of vertices in the mesh.
+
+    The second 4 bytes represent the number of indices in the mesh, this may be 0 in which case every three vertices
+    represents a polygon, and no vertices can be shared. If the number of indices is greater than 0 then every three
+    indices represent a polygon and vertices may be shared between polygons. Indices start at 0 so index 0 references
+    the first vertex in the list.
+
+    The third 4 bytes represents the number of attributes per vertex, e.g. position, normals, and UV data are all
+    potential attributes, so a vertex containing all three would have 3 attributes. A vertex must have a position
+    attribute, everything else is optional.
+
+    The fourth 4 bytes represent the size of a single vertex in bytes, this can be calculated from the attribute data
+    but is given for convenience.
+
+    The fifth 4 bytes is offset for the beginning of the vertex data, so you can reach it easily.
+
+    The sixth 4 bytes is offset for the beginning of the index data, will be 0 if there are no indices.
+
+    After those 6 values, starting at offset 24, is the vertex attribute data. The vertex attribute data describes how
+    the vertex data is laid out, for example if it has normals, UV data, etc.
+
+    For each attribute there is a 1 byte data type, 1 byte component count, 1 byte normalize flag, 1 byte string length,
+    and X bytes of string data for the attribute name. The data type will be 0 for floats (used for almost everything,
+    e.g. position, normals, etc) or 1 for unsigned bytes (used for vertex colors).
+
+    The component count is the number of values per attribute, e.g. position has 3 components, x,y,z, UV data has 2
+    components, and vertex colors have 4 components. Note that any unsigned byte data type must have 4 components even
+    if some are unused.
+
+    The normalize flag is only used for unsigned byte data types and will convert values in the range 0-255 into 0.0-1.0
+    for use in a shader. Usually the normalize flag will be 1 for color attributes and 0 for everything else.
+
+    The string length byte must always be a multiple of 4 for alignment reasons, the string itself might have slightly
+    less characters but always round up to the nearest multiple of 4 for the string length value. e.g. a string of
+    length 5 should have a string length value of 8. Note that a string of 4 characters has a null terminator on the end
+    which makes it length 5, so even though it has a multiple of 4 characters already it must use a length value of 8
+    due to the null terminator.
+
+    The attribute name string will be used by the shader to recognise what the vertex data is, the attribute names
+    recognised by AGK are "position", "normal", "tangent", "binormal", "color", "uv", "uv1", "boneweights", and
+    "boneindices", however you may add attributes with any name you like as long as you write a matching shader that has
+    the same names. If you are not using your own shader and instead rely on AGK to draw the object then you must stick
+    to the above attribute names.
+
+    Following the attribute data is the raw vertex data, which usually starts with the "position" attribute. It will be
+    a 4 byte float for the X position, a 4 byte float for the Y position, and a 4 byte float for the Z position. This
+    continues for each attribute specified in the attribute data. Note that color data will always be 4 bytes in total,
+    1 unsigned byte for each color channel. You can access individual vertices by using the vertex size provided above
+    and the vertex index like so offset=vertexDataOffset+(vertexIndex*vertexSize).
+
+    Lastly is the index data, if present. Each index is a 4 byte integer which references a vertex in the vertex data.
+    Every three indices represents a polygon.
+
+    :param int object_id: The ID of the object to create.
+    :param bytes data: A bytes object to use to create the mesg.
+    :rtype: None
+    """
+    pass    
+
+
+def set_object_mesh_from_bytes(object_id: int, mesh: int, data: bytes) -> None:
+    """
+    Changes an object's mesh based on the bytes object provided.
+
+    The bytes object need not have the same number of attributes or vertices as the original mesh, but it will improve
+    performance if it does.
+
+    The first 4 bytes of the bytes object represent the number of vertices in the mesh.
+
+    The second 4 bytes represent the number of indices in the mesh, this may be 0 in which case every three vertices
+    represents a polygon, and no vertices can be shared. If the number of indices is greater than 0 then every three
+    indices represent a polygon and vertices may be shared between polygons. Indices start at 0 so index 0 references
+    the first vertex in the list.
+
+    The third 4 bytes represents the number of attributes per vertex, e.g. position, normals, and UV data are all
+    potential attributes, so a vertex containing all three would have 3 attributes. A vertex must have a position
+    attribute, everything else is optional.
+
+    The fourth 4 bytes represent the size of a single vertex in bytes, this can be calculated from the attribute data
+    but is given for convenience.
+
+    The fifth 4 bytes is offset for the beginning of the vertex data, so you can reach it easily.
+
+    The sixth 4 bytes is offset for the beginning of the index data, will be 0 if there are no indices.
+
+    After those 6 values, starting at offset 24, is the vertex attribute data. The vertex attribute data describes how
+    the vertex data is laid out, for example if it has normals, UV data, etc.
+
+    For each attribute there is a 1 byte data type, 1 byte component count, 1 byte normalize flag, 1 byte string length,
+    and X bytes of string data for the attribute name. The data type will be 0 for floats (used for almost everything,
+    e.g. position, normals, etc) or 1 for unsigned bytes (used for vertex colors).
+
+    The component count is the number of values per attribute, e.g. position has 3 components, x,y,z, UV data has 2
+    components, and vertex colors have 4 components. Note that any unsigned byte data type must have 4 components even
+    if some are unused.
+
+    The normalize flag is only used for unsigned byte data types and will convert values in the range 0-255 into 0.0-1.0
+    for use in a shader. Usually the normalize flag will be 1 for color attributes and 0 for everything else.
+
+    The string length byte must always be a multiple of 4 for alignment reasons, the string itself might have slightly
+    less characters but always round up to the nearest multiple of 4 for the string length value. e.g. a string of
+    length 5 should have a string length value of 8. Note that a string of 4 characters has a null terminator on the end
+    which makes it length 5, so even though it has a multiple of 4 characters already it must use a length value of 8
+    due to the null terminator.
+
+    The attribute name string will be used by the shader to recognise what the vertex data is, the attribute names
+    recognised by AGK are "position", "normal", "tangent", "binormal", "color", "uv", "uv1", "boneweights", and
+    "boneindices", however you may add attributes with any name you like as long as you write a matching shader that has
+    the same names. If you are not using your own shader and instead rely on AGK to draw the object then you must stick
+    to the above attribute names.
+
+    Following the attribute data is the raw vertex data, which usually starts with the "position" attribute. It will be
+    a 4 byte float for the X position, a 4 byte float for the Y position, and a 4 byte float for the Z position. This
+    continues for each attribute specified in the attribute data. Note that color data will always be 4 bytes in total,
+    1 unsigned byte for each color channel. You can access individual vertices by using the vertex size provided above
+    and the vertex index like so offset=vertexDataOffset+(vertexIndex*vertexSize).
+
+    Lastly is the index data, if present. Each index is a 4 byte integer which references a vertex in the vertex data.
+    Every three indices represents a polygon.
+
+    If you plan on making regular changes to the mesh you should keep the bytes object around after using
+    `set_object_mesh_from_bytes()` instead of regenerating from the object it every time you want to make a change. Then
+    call `set_object_mesh_from_bytes()` again when you want to push your new changes onto the object.
+
+    :param int object_id: The ID of the object to modify.
+    :param int mesh: The index of the mesh to modify.
+    :param bytes data: A bytes object to use to modify the mesh.
+    :rtype: None
     """
     pass    
 

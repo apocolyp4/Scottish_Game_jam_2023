@@ -17,13 +17,20 @@ class Game:
         self.vis_editor = vis_editor 
         self.controls = Controls()
 
+
     def start_game(self):
         self.vis_editor.open_scene(0)              
         self.update()
 
     def update(self):
         while True:
-            agk.print_value(agk.timer())
             self.controls.update()
             self.vis_editor.update()
+
+            #checks if user using controller 1 has pressed the a button on their control pad
+            agk.print_value("Is Controller 1 connected: " + str(self.controls.game_pad_1.connected))
+            agk.print_value("Button A state: " + str(self.controls.game_pad_1.A.state))
+            agk.print_value("Button A being pressed: " + str(self.controls.game_pad_1.A.pressed))
+            agk.print_value("Button A being released: " + str(self.controls.game_pad_1.A.released))
+
             agk.sync()
