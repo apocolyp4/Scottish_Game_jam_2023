@@ -1,0 +1,52 @@
+<project>
+	<settings>
+			<width>1920.0</>
+			<height>1080.0</>
+			<orientation>Landscape</>
+			<autosave>1</>
+			<autoupdate>0</>
+			<grid>0</>
+			<gridsnap>0</>
+			<gridwidth>64.0</>
+			<gridheight>64.0</>
+			<gridred>64</>
+			<gridgreen>255</>
+			<gridblue>255</>
+			<gridoriginx>0.0</>
+			<gridoriginy>0.0</>
+			<scene colours>255 255 255 </>
+			<scene sizes>0 1 1280 720 </>
+	</settings>
+</project>
+<entity>
+	<properties>
+			<type>text</>
+			<scene>0</>
+			<name>text 1</>
+			<x>1194.0</>
+			<y>23.0</>
+			<size x>622.2</>
+			<size y>166.2</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>0.0</>
+			<offset y>0.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>0</>
+			<green>0</>
+			<blue>0</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<text>Test Scene</>
+			<alignment>0</>
+			<text size>166.2</>
+	</properties>
+</entity>

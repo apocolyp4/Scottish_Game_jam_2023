@@ -1,0 +1,20 @@
+<project>
+	<settings>
+			<width>1920.0</>
+			<height>1080.0</>
+			<orientation>Landscape</>
+			<autosave>1</>
+			<autoupdate>0</>
+			<grid>0</>
+			<gridsnap>0</>
+			<gridwidth>64.0</>
+			<gridheight>64.0</>
+			<gridred>64</>
+			<gridgreen>255</>
+			<gridblue>255</>
+			<gridoriginx>0.0</>
+			<gridoriginy>0.0</>
+			<scene colours>255 255 255 </>
+			<scene sizes>0 1 1280 720 </>
+	</settings>
+</project>
