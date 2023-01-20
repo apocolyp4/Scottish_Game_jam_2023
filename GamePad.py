@@ -7,6 +7,7 @@ class GamePad:
         self.id = id
         self.name = ""
         self.connected = False
+        self.enabled = False
         
         self.A = Button()
         self.B = Button()
