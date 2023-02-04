@@ -130,6 +130,7 @@ class Game:
 
     def update(self):
         while True:
+            agk.print_value("This should be 60! " + str(agk.screen_fps()))
             self.network_clock.update()
             access_network = self.network_clock.check_pulse()
 
