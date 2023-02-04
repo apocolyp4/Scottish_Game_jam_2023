@@ -12,6 +12,7 @@ import random
 from Controls import Controls
 from Vectors import Vector2D
 from Stopwatch import Stopwatch
+import requests
 
 class Game:
     def __init__(self, vis_editor):
@@ -75,6 +76,22 @@ class Game:
 
     def receive_server_data(self):
         print("receive_server_data")
+
+        import json
+
+        x = requests.get('https://91788rpir7.execute-api.eu-west-2.amazonaws.com/dev?player=dood')
+        print(x.status_code)
+
+        outputData = json.loads(x.text)
+
+        print(outputData["body"]["Item"])
+        self.players["Enemy"].name = outputData["body"]["Item"]["player_name"]["S"]
+        self.players["Enemy"].angle = outputData["body"]["Item"]["character_rotation"]["N"]
+        self.players["Enemy"].position.X = outputData["body"]["Item"]["characters_position_x"]["N"]
+        self.players["Enemy"].position.Y = outputData["body"]["Item"]["characters_position_y"]["N"]
+        self.players["Player"].flower_status = outputData["body"]["Item"]["flower_status"]["S"]
+
+
         #self.players["Enemy"].name
         #self.players["Enemy"].angle
         #self.players["Enemy"].position.X
@@ -84,6 +101,27 @@ class Game:
 
     def send_server_data(self):
         print("send_server_data")
+
+        import random
+        xpos = random.randrange(20, 50, 3)
+        ypos = random.randrange(20, 50, 3)
+        rotation = random.randrange(20, 50, 3)
+
+        self.players["Player"].name = "dave" 
+        self.players["Player"].angle = rotation
+        self.players["Player"].position.X = xpos
+        self.players["Player"].position.Y = ypos  
+        self.players["Enemy"].flower_status = "plucked"
+
+        data = {
+            "character_name": self.players["Player"].name,
+            "flower_status": self.players["Enemy"].flower_status,
+            "character_rotation": self.players["Player"].angle,
+            "characters_position": { "x":self.players["Player"].position.X , "y":self.players["Player"].position.Y }
+        }
+
+        requests.post('https://c6xrszj8oa.execute-api.eu-west-2.amazonaws.com/dev', json=data)
+
         #self.players["Player"].name
         #self.players["Player"].angle
         #self.players["Player"].position.X
