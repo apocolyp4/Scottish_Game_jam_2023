@@ -12,7 +12,7 @@ import json
 with agk.Application():
     #setup the editor
     agk.set_print_color(255, 255, 255)
-    
+
     vis_editor = VisualEditor(0)
     game = Game(vis_editor)
 
