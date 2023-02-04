@@ -75,16 +75,16 @@ class Game:
         self.update()
 
     def receive_server_data(self):
-        print("receive_server_data")
+        #print("receive_server_data")
 
         import json
 
         x = requests.get('https://91788rpir7.execute-api.eu-west-2.amazonaws.com/dev?player=dood')
-        print(x.status_code)
+        #print(x.status_code)
 
         outputData = json.loads(x.text)
 
-        print(outputData["body"]["Item"])
+        #print(outputData["body"]["Item"])
         self.players["Enemy"].name = outputData["body"]["Item"]["player_name"]["S"]
         self.players["Enemy"].angle = outputData["body"]["Item"]["character_rotation"]["N"]
         self.players["Enemy"].position.X = outputData["body"]["Item"]["characters_position_x"]["N"]
@@ -100,7 +100,7 @@ class Game:
 
 
     def send_server_data(self):
-        print("send_server_data")
+        #print("send_server_data")
 
         import random
         xpos = random.randrange(20, 50, 3)
