@@ -30,7 +30,9 @@ class Game:
     def init_players(self):
         self.players = {}
         self.players["Player"] = Player()
-        self.players["Player"].name = "Player " + str(int(random.uniform(1, 200)))
+        self.players["Player"].create("Bawbag")
+
+
         self.players["Enemy"] = Player()
 
     def test_network(self):
