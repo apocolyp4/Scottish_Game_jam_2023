@@ -10,6 +10,8 @@ import random
 
 class Player:
     def __init__(self):
+        self.name_text = -1
+        self.garden_side = "right"
         self.max_speed = 5.0
         self.current_animation = ""
         self.animations = {}
@@ -24,14 +26,37 @@ class Player:
         self.timer = Stopwatch()
         self.timer.start()
 
+    def spawn(self):
+        self.status = "idle"
+        if self.garden_side == "left":
+            self.position.X = 60
+            self.position.Y = agk.get_virtual_height() / 2
+            self.direction = "east"
+        else:
+            self.position.X = agk.get_virtual_width() - 100
+            self.position.Y = agk.get_virtual_height() / 2 
+            self.direction = "west"         
+
     def create(self, name):
         self.name = name
+
+        self.create_name_text()
+        self.create_sprite()
+        self.create_animations()
+        self.set_animation(self.get_animation_name())
+        width = agk.get_sprite_width(self.sprite) / 1.5
+        height = agk.get_sprite_height(self.sprite) / 1.5
+        agk.set_sprite_size(self.sprite, width, height)
+
+    def create_sprite(self):
         image = agk.load_image("images/player/player.png")
         self.sprite = agk.create_sprite(image)
 
-        self.create_animations()
-        self.set_animation(self.get_animation_name())
-
+    def create_name_text(self):
+        self.name_text = agk.create_text("")
+        agk.set_text_depth(self.name_text, 5)
+        agk.set_text_size(self.name_text, 25)
+        agk.set_text_alignment(self.name_text, 1)
 
     def create_animations(self):
         agk.set_sprite_animation(self.sprite, 64, 128, 64)
@@ -84,6 +109,19 @@ class Player:
         return animation
 
     def update_position(self):
+
+        if self.position.Y < 10:
+            self.position.Y = 10
+
+        if self.position.Y > 970:
+            self.position.Y = 970  
+
+        if self.position.X < 40:
+            self.position.X = 40
+
+        if self.position.X > 1840:
+            self.position.X = 1840
+
         agk.set_sprite_position(self.sprite, self.position.X, self.position.Y)
         #agk.set_sprite_position(self.sprite, 200, 300)
 
@@ -91,9 +129,16 @@ class Player:
         if self.get_animation_name() != self.current_animation:
             self.set_animation(self.get_animation_name())
 
+    def update_name_text(self):
+        agk.set_text_string(self.name_text, self.name)
+        x = self.position.X + (agk.get_sprite_width(self.sprite) / 2)
+        y = self.position.Y - 20
+        agk.set_text_position(self.name_text, x, y)
+
     def update(self):
         self.timer.update()
         self.update_position()
+        self.update_name_text()
         self.update_animations()
         
 

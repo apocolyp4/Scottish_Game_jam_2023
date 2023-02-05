@@ -21,6 +21,14 @@ class Game:
         self.init_controls()
         self.init_players()
         self.init_network()
+        self.init_level()
+
+    def init_level(self):
+        self.enemy_garden = agk.create_sprite(agk.load_image("ground/zone.png"))
+        agk.set_sprite_depth(self.enemy_garden, 5001)
+        agk.set_sprite_size(self.enemy_garden, agk.get_virtual_width() / 2, agk.get_virtual_height() + 200)
+        agk.set_sprite_color(self.enemy_garden, 0, 50, 0, 100)
+
 
     def init_network(self):
         self.network_clock = Stopwatch()
@@ -32,10 +40,14 @@ class Game:
         self.players = {}
         self.players["Player"] = Player()
         self.players["Player"].create("Bawbag")
+        self.players["Player"].garden_side = "left"
+        self.players["Player"].spawn()
 
 
         self.players["Enemy"] = Player()
         self.players["Enemy"].create("Fannybaws")
+        self.players["Enemy"].spawn()
+
 
     def test_network(self):
         if self.players["Player"].timer.time > 1:
@@ -127,6 +139,12 @@ class Game:
         #self.players["Player"].position.Y   
         #self.players["Enemy"].flower_status
 
+    def update_level(self):
+        if self.players["Player"].garden_side == "left":
+            agk.set_sprite_position(self.enemy_garden, agk.get_virtual_width() / 2, 0)
+        else:
+            agk.set_sprite_position(self.enemy_garden, 0, 0)
+
     def update(self):
         while True:
             agk.print_value("This should be 60! " + str(agk.screen_fps()))
@@ -137,6 +155,7 @@ class Game:
              #   self.receive_server_data()
             self.controls.update()
             self.update_players()
+            self.update_level()
 
           #  if access_network:
            #     self.send_server_data()
