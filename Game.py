@@ -109,24 +109,6 @@ class Game:
         self.players["Player"].enemy_sprite = self.players["Enemy"].sprite
         self.players["Enemy"].enemy_sprite = self.players["Player"].sprite
 
-    def test_network(self):
-        if self.players["Player"].timer.time > 1:
-            self.players["Player"].timer.reset()
-            self.players["Player"].position.X = random.uniform(20, 600)
-            self.players["Player"].position.Y = random.uniform(20, 600)
-            self.players["Player"].angle = random.uniform(0, 360)
-
-
-        agk.print_value("Name " + self.players["Player"].name)
-        agk.print_value("Angle " + str(int(self.players["Player"].angle)))
-        agk.print_value("Flower status " + self.players["Player"].flower_status)
-        agk.print_value("Position " + str(int(self.players["Player"].position.X)) + " " + str(int(self.players["Player"].position.Y)))
-     
-        agk.print_value("Name " + self.players["Enemy"].name)
-        agk.print_value("Angle " + str(int(self.players["Enemy"].angle)))
-        agk.print_value("Flower status " + self.players["Enemy"].flower_status)
-        agk.print_value("Position " + str(int(self.players["Enemy"].position.X)) + " " + str(int(self.players["Enemy"].position.Y)))
-
     def update_players(self):
         self.players["Player"].update()
         self.players["Enemy"].update()
