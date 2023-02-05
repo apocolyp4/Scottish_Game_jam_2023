@@ -13,10 +13,12 @@ from GameControls import GameControls
 from Vectors import Vector2D
 from Stopwatch import Stopwatch
 import requests
+from networking import Network
+import json
 
 class Game:
     def __init__(self, vis_editor):
-        self.type = ""
+        self.type = "host"
         self.vis_editor = vis_editor       
         self.init_controls()
         self.init_players()
@@ -30,12 +32,68 @@ class Game:
         agk.set_sprite_color(self.enemy_garden, 0, 50, 0, 100)
 
 
+        self.network_id = 0
+        self.game_network = None
+        self.host_ip = '192.168.0.54' #agk.get_edit_box_text(ip_editbox)
+        self.host_port = '4555' #agk.get_edit_box_text(port_editbox)    
+        self.status = 'server'
+
+    def connect_players(self):
+
+        self.game_network = Network("Game Deally", self.host_ip, self.host_port)
+
+        if self.status == 'server':
+            #host_ip_text = self.vis_editor.get_entity_id("Address", 4)
+            self.host_ip = "192.168.0.54"
+            self.host_port = "4555"
+            self.network_id = self.game_network.host()
+        else:
+            #host_ip_text = self.vis_editor.get_entity_id("Address", 3)
+            self.network_id = self.game_network.client()
+
+
+        host_ip_string = self.host_ip + ":" + self.host_port
+        #agk.set_text_string(host_ip_text, host_ip_string)
+
+        while True:
+            if agk.get_raw_key_pressed(27):                
+                self.start_main_menu()
+
+            #The user detail below is to be replaced with the data being passed
+            user_detail = {"sprite_name": self.status, "sprite_x": 600, "sprite_y": 500, "sprite_z": 0, "health": 123}
+
+            #below checks for a connection if none is present then one is created, this will continually 
+            #loop creating new connections and holding awaititing a connection from host or client
+
+            if agk.is_network_active(self.network_id) != 0:
+                id = agk.get_network_first_client(self.network_id )
+                #Get players online
+                while id != 0:
+                    id = agk.get_network_next_client(self.network_id )
+                self.send_server_data()
+                retreived_message = self.receive_server_data()
+                print("Incoming - " + str(retreived_message))
+            else:
+                print("still waiting for that dildo")
+                if self.status == 'server':
+                    self.network_id  = self.game_network.host()  
+                else:  
+                    self.network_id = self.game_network.client()
+
+            self.vis_editor.update()
+            self.update()
+            agk.sync()
+
+    def connect_to_host(self):
+        self.connect_players()
+
+        self.vis_editor.update()
+        agk.sync()
+
     def init_network(self):
         self.network_clock = Stopwatch()
         self.network_clock.repeat_duration = 1.0 / 15
          
-
-
     def init_players(self):
         self.players = {}
         self.players["Player"] = Player()
@@ -72,9 +130,9 @@ class Game:
     def update_players(self):
         self.players["Player"].update()
         self.players["Enemy"].update()
+
         agk.set_sprite_visible(self.players["Player"].sprite, 1)
         #self.test_network()
-
 
     def init_controls(self):
         self.controls = GameControls()#
@@ -85,33 +143,36 @@ class Game:
 
     def start_game(self):
         self.start_controls()
+
+        if type == "host":
+            self.connect_players()
+        else:                    
+            self.connect_to_host()
+
         self.vis_editor.open_scene(0)     
         self.update()
 
     def receive_server_data(self):
-        #print("receive_server_data")
+        retreived_message = self.game_network.retreive_message(self.network_id )
+        print("Incoming - " + str(retreived_message))
 
-        import json
+        try:
+            outputData = json.loads(retreived_message)
 
-        x = requests.get('https://91788rpir7.execute-api.eu-west-2.amazonaws.com/dev?player=dood')
-        #print(x.status_code)
+            #print(outputData["body"]["Item"])
+            self.players["Enemy"].name = outputData["character_name"]
+            self.players["Enemy"].angle = outputData["character_rotation"]
+            self.players["Enemy"].position.X = outputData["characters_position"]["x"]
+            self.players["Enemy"].position.Y = outputData["characters_position"]["y"]
+            self.players["Player"].flower_status = outputData["flower_status"]
 
-        outputData = json.loads(x.text)
-
-        #print(outputData["body"]["Item"])
-        self.players["Enemy"].name = outputData["body"]["Item"]["player_name"]["S"]
-        self.players["Enemy"].angle = outputData["body"]["Item"]["character_rotation"]["N"]
-        self.players["Enemy"].position.X = outputData["body"]["Item"]["characters_position_x"]["N"]
-        self.players["Enemy"].position.Y = outputData["body"]["Item"]["characters_position_y"]["N"]
-        self.players["Player"].flower_status = outputData["body"]["Item"]["flower_status"]["S"]
-
-
-        #self.players["Enemy"].name
-        #self.players["Enemy"].angle
-        #self.players["Enemy"].position.X
-        #self.players["Enemy"].position.Y   
-        #self.players["Player"].flower_status
-
+            # self.players["Enemy"].name
+            # self.players["Enemy"].angle
+            # self.players["Enemy"].position.X
+            # self.players["Enemy"].position.Y   
+            # self.players["Player"].flower_status
+        except Exception as e:
+            print(e)
 
     def send_server_data(self):
         #print("send_server_data")
@@ -120,6 +181,8 @@ class Game:
         xpos = random.randrange(20, 50, 3)
         ypos = random.randrange(20, 50, 3)
         rotation = random.randrange(20, 50, 3)
+
+        
 
         self.players["Player"].name = "dave" 
         self.players["Player"].angle = rotation
@@ -134,13 +197,12 @@ class Game:
             "characters_position": { "x":self.players["Player"].position.X , "y":self.players["Player"].position.Y }
         }
 
-        requests.post('https://c6xrszj8oa.execute-api.eu-west-2.amazonaws.com/dev', json=data)
-
-        #self.players["Player"].name
-        #self.players["Player"].angle
-        #self.players["Player"].position.X
-        #self.players["Player"].position.Y   
-        #self.players["Enemy"].flower_status
+        self.game_network.send_message(self.network_id , data)
+        # self.players["Player"].name
+        # self.players["Player"].angle
+        # self.players["Player"].position.X
+        # self.players["Player"].position.Y   
+        # self.players["Enemy"].flower_status
 
     def update_level(self):
         if self.players["Player"].garden_side == "left":
@@ -154,14 +216,15 @@ class Game:
             self.network_clock.update()
             access_network = self.network_clock.check_pulse()
 
-           # if access_network:
-             #   self.receive_server_data()
+            if access_network:
+                self.receive_server_data()
+
             self.controls.update()
             self.update_players()
             self.update_level()
 
-          #  if access_network:
-           #     self.send_server_data()
+            if access_network:
+                self.send_server_data()
 
             self.vis_editor.update()
 
