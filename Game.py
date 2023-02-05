@@ -140,18 +140,29 @@ class Game:
 
         try:
             outputData = json.loads(retreived_message)
-
-            #print(outputData["body"]["Item"])
             self.players["Enemy"].name = outputData["character_name"]
-            self.players["Enemy"].angle = outputData["character_rotation"]
+            self.players["Enemy"].direction = outputData["character_rotation"]
             self.players["Enemy"].position.X = outputData["characters_position"]["x"]
             self.players["Enemy"].position.Y = outputData["characters_position"]["y"]
             self.players["Player"].flower_status = outputData["flower_status"]
-
         except Exception as e:
             print(e)
 
     def send_server_data(self):
+        #print("send_server_data")
+
+        # import random
+        # xpos = random.randrange(20, 50, 3)
+        # ypos = random.randrange(20, 50, 3)
+        # rotation = random.randrange(20, 50, 3)
+
+        
+
+        # self.players["Player"].name = "dave" 
+        # self.players["Player"].angle = rotation
+        # self.players["Player"].position.X = xpos
+        # self.players["Player"].position.Y = ypos  
+        # self.players["Enemy"].flower_status = "plucked"
 
         data = {
             "character_name": self.players["Player"].name,
@@ -161,7 +172,11 @@ class Game:
         }
 
         self.game_network.send_message(self.network_id , data)
-
+        # self.players["Player"].name
+        # self.players["Player"].angle
+        # self.players["Player"].position.X
+        # self.players["Player"].position.Y   
+        # self.players["Enemy"].flower_status
 
     def update_level(self):
         if self.players["Player"].garden_side == "left":
