@@ -17,9 +17,11 @@ from networking import Network
 import json
 
 class Game:
-    def __init__(self, vis_editor):
-        self.type = "host"
-        self.vis_editor = vis_editor       
+    def __init__(self, vis_editor, type, user_name):
+        self.type = type
+        self.user_name = user_name
+        self.vis_editor = vis_editor     
+        self.vis_editor.open_scene(0)   
         self.init_controls()
         self.init_players()
         self.init_network()
@@ -34,18 +36,18 @@ class Game:
 
         self.network_id = 0
         self.game_network = None
-        self.host_ip = '192.168.0.54' #agk.get_edit_box_text(ip_editbox)
-        self.host_port = '4555' #agk.get_edit_box_text(port_editbox)    
-        self.status = 'server'
+        self.host_ip = '77.103.255.35' #agk.get_edit_box_text(ip_editbox)
+        self.host_port = '5689' #agk.get_edit_box_text(port_editbox)    
+        self.status = ''
 
     def connect_players(self):
-
+        print("GetDeviceIP() " + agk.get_device_ip())
         self.game_network = Network("Game Deally", self.host_ip, self.host_port)
 
         if self.status == 'server':
             #host_ip_text = self.vis_editor.get_entity_id("Address", 4)
-            self.host_ip = "192.168.0.54"
-            self.host_port = "4555"
+            self.host_ip = "77.103.255.35"
+            self.host_port = "5689"
             self.network_id = self.game_network.host()
         else:
             #host_ip_text = self.vis_editor.get_entity_id("Address", 3)
@@ -97,8 +99,11 @@ class Game:
     def init_players(self):
         self.players = {}
         self.players["Player"] = Player()
-        self.players["Player"].create("Bawbag")
-        self.players["Player"].garden_side = "left"
+        self.players["Player"].create(self.user_name)
+
+        if self.type == "host":
+            self.players["Player"].garden_side = "left"
+            
         self.players["Player"].spawn()
 
 

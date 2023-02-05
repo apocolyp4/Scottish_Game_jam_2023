@@ -14,10 +14,8 @@ with agk.Application():
     agk.set_print_color(255, 255, 255)
 
     vis_editor = VisualEditor(0)
-    #main_menu = MainMenu(vis_editor)
-    #main_menu.start()
+    main_menu = MainMenu(vis_editor)
+    main_menu.start()
 
-    #vis_editor = VisualEditor(0)
-    game = Game(vis_editor)
-
+    game = Game(vis_editor, main_menu.type, main_menu.name)
     game.start_game()

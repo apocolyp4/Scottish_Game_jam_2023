@@ -5491,19 +5491,19 @@
 </entity>
 <entity>
 	<properties>
-			<type>button</>
+			<type>sprite</>
 			<scene>1</>
-			<name>virtual button 0</>
-			<x>576.0</>
+			<name>IB:Client</>
+			<x>320.0</>
 			<y>768.0</>
-			<size x>258.0</>
-			<size y>258.0</>
+			<size x>498.0</>
+			<size y>181.5</>
 			<scale x>1.0</>
 			<scale y>1.0</>
-			<offset x>0.0</>
-			<offset y>0.0</>
+			<offset x>249.0</>
+			<offset y>90.7</>
 			<angle>0.0</>
-			<depth>0</>
+			<depth>5000</>
 			<visible>1</>
 			<red>255</>
 			<green>255</>
@@ -5512,27 +5512,43 @@
 			<locked>0</>
 			<fixed>0</>
 			<goto>0</>
-			<button down>Default</>
-			<button up>Default</>
-			<button text>Host</>
-			<button goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Images/GUI/client.png</>
 	</properties>
 </entity>
 <entity>
 	<properties>
-			<type>button</>
+			<type>sprite</>
 			<scene>1</>
-			<name>virtual button 1</>
+			<name>IB:Host</>
 			<x>1088.0</>
 			<y>768.0</>
-			<size x>258.0</>
-			<size y>258.0</>
+			<size x>498.0</>
+			<size y>181.5</>
 			<scale x>1.0</>
 			<scale y>1.0</>
-			<offset x>0.0</>
-			<offset y>0.0</>
+			<offset x>249.0</>
+			<offset y>90.7</>
 			<angle>0.0</>
-			<depth>0</>
+			<depth>5000</>
 			<visible>1</>
 			<red>255</>
 			<green>255</>
@@ -5541,9 +5557,25 @@
 			<locked>0</>
 			<fixed>0</>
 			<goto>0</>
-			<button down>Default</>
-			<button up>Default</>
-			<button text>Join</>
-			<button goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Images/GUI/host.png</>
 	</properties>
 </entity>
