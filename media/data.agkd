@@ -6,7 +6,7 @@
 			<autosave>1</>
 			<autoupdate>0</>
 			<grid>0</>
-			<gridsnap>0</>
+			<gridsnap>1</>
 			<gridwidth>64.0</>
 			<gridheight>64.0</>
 			<gridred>64</>
@@ -18,3 +18,5358 @@
 			<scene sizes>0 1 1280 720 </>
 	</settings>
 </project>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 41</>
+			<x>1.0</>
+			<y>1.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 42</>
+			<x>640.0</>
+			<y>0.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 43</>
+			<x>1280.0</>
+			<y>-2.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 44</>
+			<x>0.0</>
+			<y>-324.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 45</>
+			<x>640.0</>
+			<y>-320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 46</>
+			<x>0.0</>
+			<y>320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 47</>
+			<x>1280.0</>
+			<y>-318.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 48</>
+			<x>640.0</>
+			<y>320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 49</>
+			<x>1280.0</>
+			<y>320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 50</>
+			<x>0.0</>
+			<y>640.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 51</>
+			<x>640.0</>
+			<y>640.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 52</>
+			<x>1280.0</>
+			<y>640.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 53</>
+			<x>-2.0</>
+			<y>960.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 54</>
+			<x>640.0</>
+			<y>960.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 55</>
+			<x>1728.0</>
+			<y>960.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 61</>
+			<x>1728.0</>
+			<y>-320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 62</>
+			<x>1728.0</>
+			<y>0.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 63</>
+			<x>1723.0</>
+			<y>320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 64</>
+			<x>1725.0</>
+			<y>640.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 65</>
+			<x>1283.0</>
+			<y>961.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>gate_1</>
+			<x>0.0</>
+			<y>64.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 71</>
+			<x>64.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 72</>
+			<x>0.0</>
+			<y>128.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 73</>
+			<x>0.0</>
+			<y>192.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 74</>
+			<x>0.0</>
+			<y>256.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 75</>
+			<x>0.0</>
+			<y>320.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 76</>
+			<x>0.0</>
+			<y>384.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 77</>
+			<x>0.0</>
+			<y>448.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 78</>
+			<x>-0.0</>
+			<y>512.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 79</>
+			<x>-0.0</>
+			<y>576.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 80</>
+			<x>-0.0</>
+			<y>640.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 81</>
+			<x>-0.0</>
+			<y>704.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 82</>
+			<x>-0.0</>
+			<y>768.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 83</>
+			<x>0.0</>
+			<y>832.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 84</>
+			<x>0.0</>
+			<y>896.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 85</>
+			<x>0.0</>
+			<y>960.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 86</>
+			<x>64.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 90</>
+			<x>128.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 91</>
+			<x>192.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 92</>
+			<x>256.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 93</>
+			<x>320.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 94</>
+			<x>384.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 95</>
+			<x>448.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 96</>
+			<x>512.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 97</>
+			<x>576.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 98</>
+			<x>640.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 99</>
+			<x>704.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 100</>
+			<x>768.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 101</>
+			<x>832.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 102</>
+			<x>896.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 103</>
+			<x>960.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 104</>
+			<x>1024.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 105</>
+			<x>1088.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 106</>
+			<x>1152.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 107</>
+			<x>1216.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 108</>
+			<x>1280.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 109</>
+			<x>1344.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 110</>
+			<x>1408.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 111</>
+			<x>1472.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 112</>
+			<x>1536.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 113</>
+			<x>1600.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 114</>
+			<x>1664.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 115</>
+			<x>1728.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 116</>
+			<x>1792.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 117</>
+			<x>1856.0</>
+			<y>960.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 118</>
+			<x>1856.0</>
+			<y>896.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 119</>
+			<x>1856.0</>
+			<y>832.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 120</>
+			<x>1856.0</>
+			<y>768.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 121</>
+			<x>1856.0</>
+			<y>704.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 122</>
+			<x>1856.0</>
+			<y>640.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 123</>
+			<x>1856.0</>
+			<y>576.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 124</>
+			<x>1856.0</>
+			<y>512.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 125</>
+			<x>1856.0</>
+			<y>448.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 126</>
+			<x>1856.0</>
+			<y>384.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 127</>
+			<x>1856.0</>
+			<y>320.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 128</>
+			<x>1856.0</>
+			<y>256.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 129</>
+			<x>1856.0</>
+			<y>192.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 130</>
+			<x>1856.0</>
+			<y>128.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 131</>
+			<x>1856.0</>
+			<y>64.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 132</>
+			<x>1792.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 133</>
+			<x>1728.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 134</>
+			<x>1664.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 135</>
+			<x>1600.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 136</>
+			<x>1536.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 137</>
+			<x>1472.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 138</>
+			<x>1408.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 139</>
+			<x>1344.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 140</>
+			<x>1280.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 141</>
+			<x>1216.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 142</>
+			<x>1152.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 143</>
+			<x>1088.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 144</>
+			<x>1024.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 145</>
+			<x>960.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 146</>
+			<x>896.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 147</>
+			<x>832.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 148</>
+			<x>128.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 149</>
+			<x>192.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 150</>
+			<x>256.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 151</>
+			<x>320.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 152</>
+			<x>384.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 153</>
+			<x>448.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 154</>
+			<x>512.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 155</>
+			<x>576.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 156</>
+			<x>640.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 157</>
+			<x>704.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 158</>
+			<x>768.0</>
+			<y>0.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 159</>
+			<x>34.0</>
+			<y>1.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 160</>
+			<x>0.0</>
+			<y>29.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 161</>
+			<x>1.0</>
+			<y>1006.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb001.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 162</>
+			<x>28.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 163</>
+			<x>1856.0</>
+			<y>997.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 164</>
+			<x>1831.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 165</>
+			<x>1855.0</>
+			<y>24.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb002.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 166</>
+			<x>1826.0</>
+			<y>-1.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb000.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 167</>
+			<x>-704.0</>
+			<y>-320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 169</>
+			<x>-704.0</>
+			<y>0.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 170</>
+			<x>-704.0</>
+			<y>320.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 171</>
+			<x>-704.0</>
+			<y>640.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 172</>
+			<x>-704.0</>
+			<y>960.0</>
+			<size x>729.0</>
+			<size y>327.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>364.5</>
+			<offset y>163.5</>
+			<angle>0.0</>
+			<depth>5002</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/grass2.png</>
+	</properties>
+</entity>
