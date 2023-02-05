@@ -128,7 +128,7 @@ class Game:
     def update_players(self):
         self.players["Player"].update()
         self.players["Enemy"].update()
-        #self.test_network()
+        self.test_network()
 
 
     def init_controls(self):
@@ -213,14 +213,15 @@ class Game:
             self.network_clock.update()
             access_network = self.network_clock.check_pulse()
 
-           # if access_network:
-             #   self.receive_server_data()
+            if access_network:
+                self.receive_server_data()
+
             self.controls.update()
             self.update_players()
             self.update_level()
 
-          #  if access_network:
-           #     self.send_server_data()
+            if access_network:
+                self.send_server_data()
 
             self.vis_editor.update()
 
