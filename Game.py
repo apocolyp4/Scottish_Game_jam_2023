@@ -9,7 +9,7 @@ from networking import Network
 from Text import Text
 import os
 import random
-from Controls import Controls
+from GameControls import GameControls
 from Vectors import Vector2D
 from Stopwatch import Stopwatch
 import requests
@@ -35,6 +35,7 @@ class Game:
 
 
         self.players["Enemy"] = Player()
+        self.players["Enemy"].create("Fannybaws")
 
     def test_network(self):
         if self.players["Player"].timer.time > 1:
@@ -57,17 +58,15 @@ class Game:
     def update_players(self):
         self.players["Player"].update()
         self.players["Enemy"].update()
-        self.test_network()
+        #self.test_network()
 
 
     def init_controls(self):
-        self.controls = Controls()
-        self.mouse = self.controls.mouse
-        self.gamepad = self.controls.game_pad_1
+        self.controls = GameControls()#
+
 
     def start_controls(self):
-        self.gamepad.enabled = True
-        self.mouse.enabled = True
+        self.controls.start(self.players["Player"])
 
     def start_game(self):
         self.start_controls()
@@ -134,14 +133,13 @@ class Game:
             self.network_clock.update()
             access_network = self.network_clock.check_pulse()
 
-            if access_network:
-                self.receive_server_data()
-
+           # if access_network:
+             #   self.receive_server_data()
             self.controls.update()
             self.update_players()
 
-            if access_network:
-                self.send_server_data()
+          #  if access_network:
+           #     self.send_server_data()
 
             self.vis_editor.update()
 

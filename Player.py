@@ -10,6 +10,8 @@ import random
 
 class Player:
     def __init__(self):
+        self.max_speed = 5.0
+        self.current_animation = ""
         self.animations = {}
         self.direction = "south"
         self.status = "idle"
@@ -54,34 +56,46 @@ class Player:
         self.animations["idle north east"] = SpriteAnimation(25, 28, 5, 1)
         self.animations["idle north west"] = SpriteAnimation(29, 32, 5, 1)
 
-    def set_animation(self, animation_name):
+        self.animations["walking south"] = SpriteAnimation(65, 78, 10, 1)
+        self.animations["walking north"] = SpriteAnimation(79, 92, 10, 1)
+        self.animations["walking south west"] = SpriteAnimation(45, 48, 5, 1)
+        self.animations["walking south east"] = SpriteAnimation(41, 44, 5, 1)
+        self.animations["walking east"] = SpriteAnimation(49, 52, 5, 1)
+        self.animations["walking west"] = SpriteAnimation(53, 56, 5, 1)
+        self.animations["walking north east"] = SpriteAnimation(57, 60, 5, 1)
+        self.animations["walking north west"] = SpriteAnimation(61, 64, 5, 1)
 
-        print("animation_name " + animation_name)
+
+    def set_animation(self, animation_name):
 
         if animation_name in self.animations:
             start_frame = self.animations[animation_name].start_frame
             end_frame = self.animations[animation_name].end_frame
             fps = self.animations[animation_name].fps
             looped = self.animations[animation_name].looped
-
-           
-
+            self.current_animation = animation_name      
             agk.play_sprite(self.sprite, fps, looped, start_frame, end_frame)
-        else:
-            print("not found animation " + animation_name)
-
+       # else:
+           # print("not found animation " + animation_name)
+           # print(self.animations.keys())
 
     def get_animation_name(self):
         animation = self.status + " " + self.direction
         return animation
 
     def update_position(self):
-        #agk.set_sprite_position(self.sprite, self.position.X, self.position.Y)
-        agk.set_sprite_position(self.sprite, 200, 300)
+        agk.set_sprite_position(self.sprite, self.position.X, self.position.Y)
+        #agk.set_sprite_position(self.sprite, 200, 300)
+
+    def update_animations(self):
+        if self.get_animation_name() != self.current_animation:
+            self.set_animation(self.get_animation_name())
 
     def update(self):
         self.timer.update()
         self.update_position()
+        self.update_animations()
+        
 
 
 
