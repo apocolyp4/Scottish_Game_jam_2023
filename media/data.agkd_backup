@@ -14,8 +14,8 @@
 			<gridblue>255</>
 			<gridoriginx>0.0</>
 			<gridoriginy>0.0</>
-			<scene colours>255 255 255 </>
-			<scene sizes>0 1 1280 720 </>
+			<scene colours>255 255 255 255 128 64 </>
+			<scene sizes>0 1 1280 720 1 1 1920 1080 </>
 	</settings>
 </project>
 <entity>
@@ -5371,5 +5371,179 @@
 			<mass>0.0</>
 			<restitution>0.0</>
 			<image>ground/grass2.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>text</>
+			<scene>1</>
+			<name>text 0</>
+			<x>64.0</>
+			<y>-0.0</>
+			<size x>1797.8</>
+			<size y>264.9</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>0.0</>
+			<offset y>0.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>0</>
+			<green>0</>
+			<blue>0</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<text>Midsomer Pluckers</>
+			<alignment>0</>
+			<text size>264.9</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>editbox</>
+			<scene>1</>
+			<name>edit box 0</>
+			<x>640.0</>
+			<y>512.0</>
+			<size x>616.0</>
+			<size y>150.4</>
+			<scale x>0.0</>
+			<scale y>0.0</>
+			<offset x>0.0</>
+			<offset y>0.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>0</>
+			<green>0</>
+			<blue>0</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<text></>
+			<edit size>148.4</>
+			<edit colour red>0</>
+			<edit colour green>0</>
+			<edit colour blue>0</>
+			<edit background red>255</>
+			<edit background green>255</>
+			<edit background blue>255</>
+			<edit background alpha>255</>
+			<edit border red>0</>
+			<edit border green>0</>
+			<edit border blue>0</>
+			<edit border alpha>255</>
+			<edit border size>2.0</>
+			<edit max characters>0</>
+			<edit max lines>0</>
+			<edit multi line>0</>
+			<edit password>0</>
+			<edit cursor red>0</>
+			<edit cursor green>0</>
+			<edit cursor blue>0</>
+			<edit cursor width>3.0</>
+			<edit cursor wrap>0</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>text</>
+			<scene>1</>
+			<name>text 1</>
+			<x>616.0</>
+			<y>384.0</>
+			<size x>667.0</>
+			<size y>108.9</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>0.0</>
+			<offset y>0.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>0</>
+			<green>0</>
+			<blue>0</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<text>Enter Your Name</>
+			<alignment>0</>
+			<text size>108.9</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>button</>
+			<scene>1</>
+			<name>virtual button 0</>
+			<x>576.0</>
+			<y>768.0</>
+			<size x>258.0</>
+			<size y>258.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>0.0</>
+			<offset y>0.0</>
+			<angle>0.0</>
+			<depth>0</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<button down>Default</>
+			<button up>Default</>
+			<button text>Host</>
+			<button goto>0</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>button</>
+			<scene>1</>
+			<name>virtual button 1</>
+			<x>1088.0</>
+			<y>768.0</>
+			<size x>258.0</>
+			<size y>258.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>0.0</>
+			<offset y>0.0</>
+			<angle>0.0</>
+			<depth>0</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<button down>Default</>
+			<button up>Default</>
+			<button text>Join</>
+			<button goto>0</>
 	</properties>
 </entity>

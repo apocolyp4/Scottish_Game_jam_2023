@@ -6,7 +6,7 @@ from Sprite import Sprite
 from networking import Network
 from Text import Text
 from Game import Game
-
+from MainMenu import MainMenu
 import json
 
 with agk.Application():
@@ -14,6 +14,10 @@ with agk.Application():
     agk.set_print_color(255, 255, 255)
 
     vis_editor = VisualEditor(0)
+    #main_menu = MainMenu(vis_editor)
+    #main_menu.start()
+
+    #vis_editor = VisualEditor(0)
     game = Game(vis_editor)
 
     game.start_game()

@@ -92,6 +92,7 @@ class VisualEditor:
         setup_scenes(self)
 
     def open_scene(self, scene_id):
+        print("self.scenes " + str(len(self.scenes)))
         self.VisualEditor_scene_id = scene_id
         set_scene(self, scene_id)
 
