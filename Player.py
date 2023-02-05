@@ -10,6 +10,8 @@ import random
 
 class Player:
     def __init__(self):
+        self.see_enemy = False
+        self.danger_zone = False
         self.name_text = -1
         self.garden_side = "right"
         self.max_speed = 5.0
@@ -18,6 +20,7 @@ class Player:
         self.direction = "south"
         self.status = "idle"
         self.sprite = -1
+        self.enemy_sprite = -1
         self.name = ""
         self.health = 100
         self.position = Vector2D(100, 200)
@@ -47,6 +50,7 @@ class Player:
         width = agk.get_sprite_width(self.sprite) / 1.5
         height = agk.get_sprite_height(self.sprite) / 1.5
         agk.set_sprite_size(self.sprite, width, height)
+        agk.set_sprite_shape(self.sprite, 1)
 
     def create_sprite(self):
         image = agk.load_image("images/player/player.png")
@@ -104,6 +108,26 @@ class Player:
            # print("not found animation " + animation_name)
            # print(self.animations.keys())
 
+    def update_angle(self):
+        if self.direction == "north":
+            self.angle = 0
+        elif self.direction == "north east":
+            self.angle = 45
+        elif self.direction == "east":
+            self.angle = 90
+        elif self.direction == "south east":
+            self.angle = 135
+        elif self.direction == "south":
+            self.angle = 180
+        elif self.direction == "south west":
+            self.angle = 225
+        elif self.direction == "west":
+            self.angle = 270
+        elif self.direction == "north west":
+            self.angle = 315
+
+        agk.print_value("angle " + str(self.angle))
+
     def get_animation_name(self):
         animation = self.status + " " + self.direction
         return animation
@@ -135,9 +159,39 @@ class Player:
         y = self.position.Y - 20
         agk.set_text_position(self.name_text, x, y)
 
+    def update_ray_cast(self):
+        x = self.position.X + (agk.get_sprite_width(self.sprite) / 2)
+        y = self.position.Y + (agk.get_sprite_height(self.sprite) / 2)
+        velocity = get_velocity(self.angle, 500)
+        x2 = x + velocity[0]
+        y2 = y + velocity[1]
+        if agk.sprite_ray_cast( x, y, x2, y2 ) == 1:
+            if agk.get_ray_cast_sprite_id() == self.enemy_sprite:
+                self.see_enemy = True
+
+        if self.see_enemy:
+            agk.set_sprite_visible(self.enemy_sprite, 1)
+        else:
+            agk.set_sprite_visible(self.enemy_sprite, 1)
+
+    def check_in_danger_zone(self):
+        self.danger_zone = False   
+        x = self.position.X + (agk.get_sprite_width(self.sprite) / 2)
+
+        if self.garden_side == "right":
+            if x < agk.get_virtual_width() / 2:
+                self.danger_zone = True
+
+        if self.garden_side == "left":
+            if x >= agk.get_virtual_width() / 2:
+                self.danger_zone = True
+
     def update(self):
         self.timer.update()
+        self.update_angle()
         self.update_position()
+        self.check_in_danger_zone()
+        self.update_ray_cast()
         self.update_name_text()
         self.update_animations()
         

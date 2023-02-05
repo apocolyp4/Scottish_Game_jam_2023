@@ -48,6 +48,8 @@ class Game:
         self.players["Enemy"].create("Fannybaws")
         self.players["Enemy"].spawn()
 
+        self.players["Player"].enemy_sprite = self.players["Enemy"].sprite
+        self.players["Enemy"].enemy_sprite = self.players["Player"].sprite
 
     def test_network(self):
         if self.players["Player"].timer.time > 1:
@@ -70,6 +72,7 @@ class Game:
     def update_players(self):
         self.players["Player"].update()
         self.players["Enemy"].update()
+        agk.set_sprite_visible(self.players["Player"].sprite, 1)
         #self.test_network()
 
 

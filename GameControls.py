@@ -49,6 +49,9 @@ class GameControls:
         if self.gamepad.left_force > 0.2:
             self.direction()
             speed = self.player.max_speed * self.gamepad.left_force
+            if self.player.danger_zone:
+                speed *= 0.8
+
             velocity = get_velocity(self.player.angle, speed)
             self.player.position.X += velocity[0]
             self.player.position.Y += velocity[1]
