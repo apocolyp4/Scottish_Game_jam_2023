@@ -16,6 +16,7 @@ with agk.Application():
     vis_editor = VisualEditor(0)
     main_menu = MainMenu(vis_editor)
     main_menu.start()
-
+    
     game = Game(vis_editor, main_menu.type, main_menu.name)
+    #game = Game(vis_editor, "host", "The champ")
     game.start_game()

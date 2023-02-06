@@ -18,7 +18,7 @@ import json
 
 class Game:
     def __init__(self, vis_editor, type, user_name):
-        self.type = type
+        self.network_type = type
         self.user_name = user_name
         self.vis_editor = vis_editor     
         self.vis_editor.open_scene(0)   
@@ -101,7 +101,7 @@ class Game:
         self.players["Player"] = Player()
         self.players["Player"].create(self.user_name)
 
-        if self.type == "host":
+        if self.network_type == "host":
             self.players["Player"].garden_side = "left"
             
         self.players["Player"].spawn()
@@ -131,9 +131,11 @@ class Game:
     def start_game(self):
         self.start_controls()
 
-        if type == "host":
+        if self.network_type == "host":
+            agk.message("im a host")
             self.connect_players()
-        else:                    
+        else:
+            agk.message("im a client")                 
             self.connect_to_host()
 
         self.vis_editor.open_scene(0)     
