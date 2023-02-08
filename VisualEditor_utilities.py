@@ -15,6 +15,18 @@ def get_id(self, entity_name, scene_id):
     agk.message("The entity " + entity_name + " does not exist. Please note the scene index begins at 0.")
     return -1
 
+def get_exists(self, entity_name, scene_id):
+    if scene_id < 0 or scene_id > len(self.scenes) - 1:
+        agk.message("The scene index passed into get_entity_id is out of bounds. This scene does not exist.")
+        return -1
+
+    for scene_entity in self.scenes[scene_id].entities:
+        entity = self.VisualEditor_Entities[scene_entity.index]
+        if entity.sName == entity_name:
+            return True
+
+    return False
+
 
 def get_kind(self, entity_name, scene_id):
     if scene_id < 0 or scene_id > len(self.scenes) - 1:

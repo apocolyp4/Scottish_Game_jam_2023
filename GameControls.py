@@ -16,7 +16,8 @@ class GameControls:
     def update(self):
         self.controls.update()
         if self.gamepad.connected:
-            self.move()
+            if self.player.status == "walking" or self.player.status == "idle":
+                self.move()
 
     def direction(self):
         angle = self.gamepad.left_angle

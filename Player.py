@@ -20,7 +20,7 @@ class Player:
         self.direction = "south"
         self.status = "idle"
         self.sprite = -1
-        self.enemy_sprite = -1
+        self.enemy = -1
         self.name = ""
         self.health = 100
         self.position = Vector2D(100, 200)
@@ -28,6 +28,7 @@ class Player:
         self.flower_status = "Safe"
         self.timer = Stopwatch()
         self.timer.start()
+        self.debug_ray_cast = -1
 
     def spawn(self):
         self.status = "idle"
@@ -55,6 +56,10 @@ class Player:
     def create_sprite(self):
         image = agk.load_image("images/player/player.png")
         self.sprite = agk.create_sprite(image)
+
+        #image = agk.load_image("block.png")
+        #self.debug_ray_cast = agk.create_sprite(image)
+
 
     def create_name_text(self):
         self.name_text = agk.create_text("")
@@ -96,7 +101,6 @@ class Player:
 
 
     def set_animation(self, animation_name):
-
         if animation_name in self.animations:
             start_frame = self.animations[animation_name].start_frame
             end_frame = self.animations[animation_name].end_frame
@@ -126,7 +130,6 @@ class Player:
         elif self.direction == "north west":
             self.angle = 315
 
-        agk.print_value("angle " + str(self.angle))
 
     def get_animation_name(self):
         animation = self.status + " " + self.direction
@@ -160,19 +163,45 @@ class Player:
         agk.set_text_position(self.name_text, x, y)
 
     def update_ray_cast(self):
+        self.see_enemy = False
+
         x = self.position.X + (agk.get_sprite_width(self.sprite) / 2)
         y = self.position.Y + (agk.get_sprite_height(self.sprite) / 2)
-        velocity = get_velocity(self.angle, 500)
-        x2 = x + velocity[0]
-        y2 = y + velocity[1]
-        if agk.sprite_ray_cast( x, y, x2, y2 ) == 1:
-            if agk.get_ray_cast_sprite_id() == self.enemy_sprite:
-                self.see_enemy = True
+
+
+        sweep_range = 120
+        angle = self.angle - (sweep_range / 2)
+        sweep_step = 5
+        sweep_steps = int(sweep_range / sweep_step)
+
+        for i in range(0, sweep_steps):
+            velocity = get_velocity(angle, 500)
+            x2 = x + velocity[0]
+            y2 = y + velocity[1]
+
+            #agk.set_sprite_position(self.debug_ray_cast, x2, y2)         
+            angle += sweep_step
+
+            if agk.sprite_ray_cast( x, y, x2, y2 ) == 1:        
+                if agk.get_ray_cast_sprite_id() == self.enemy.sprite:
+                    self.see_enemy = True
+                    break
+
+        alpha = agk.get_sprite_color_alpha(self.enemy.sprite)
+        alpha_step = 10
 
         if self.see_enemy:
-            agk.set_sprite_visible(self.enemy_sprite, 1)
+            alpha += alpha_step
+            if alpha > 255:
+                alpha = 255
+
         else:
-            agk.set_sprite_visible(self.enemy_sprite, 1)
+            alpha -= alpha_step
+            if alpha < 0:
+                alpha = 0
+
+        agk.set_sprite_color_alpha(self.enemy.sprite, alpha)   
+        agk.set_text_color_alpha(self.enemy.name_text, alpha)        
 
     def check_in_danger_zone(self):
         self.danger_zone = False   
@@ -186,7 +215,12 @@ class Player:
             if x >= agk.get_virtual_width() / 2:
                 self.danger_zone = True
 
+    def check_state(self):
+        if self.status == "caught":
+            self.spawn()
+
     def update(self):
+        self.check_state()
         self.timer.update()
         self.update_angle()
         self.update_position()
@@ -194,6 +228,7 @@ class Player:
         self.update_ray_cast()
         self.update_name_text()
         self.update_animations()
+        
         
 
 

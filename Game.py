@@ -15,9 +15,11 @@ from Stopwatch import Stopwatch
 import requests
 from networking import Network
 import json
+from CollisionDetection import *
 
 class Game:
     def __init__(self, vis_editor, type, user_name):
+        agk.set_print_color(255, 255, 255)
         self.network_type = type
         self.user_name = user_name
         self.vis_editor = vis_editor     
@@ -32,13 +34,27 @@ class Game:
         agk.set_sprite_depth(self.enemy_garden, 5001)
         agk.set_sprite_size(self.enemy_garden, agk.get_virtual_width() / 2, agk.get_virtual_height() + 200)
         agk.set_sprite_color(self.enemy_garden, 0, 50, 0, 100)
-
-
+        self.ground_sprite = agk.create_sprite(agk.load_image("ground/grass1.png"))
+        agk.set_sprite_depth(self.ground_sprite, 5002)
+        agk.set_sprite_position(self.ground_sprite, 0, 0)
+        self.init_hedges()
+        
         self.network_id = 0
         self.game_network = None
         self.host_ip = '77.103.255.35' #agk.get_edit_box_text(ip_editbox)
         self.host_port = '5689' #agk.get_edit_box_text(port_editbox)    
         self.status = ''
+
+
+    def init_hedges(self):
+        self.level_hedges = []
+        #hack to get round visual editor bug that sets all sprites to polygon shape
+        for i in range(122, 239):
+            sprite_name = "sprite " + str(i)
+            if(self.vis_editor.get_entity_exists(sprite_name , 0)):
+                sprite = self.vis_editor.get_entity_id(sprite_name , 0)
+                self.level_hedges.append(sprite)
+
 
     def connect_players(self):
         print("GetDeviceIP() " + agk.get_device_ip())
@@ -88,7 +104,6 @@ class Game:
 
     def connect_to_host(self):
         self.connect_players()
-
         self.vis_editor.update()
         agk.sync()
 
@@ -111,15 +126,9 @@ class Game:
         self.players["Enemy"].create("Fannybaws")
         self.players["Enemy"].spawn()
 
-        self.players["Player"].enemy_sprite = self.players["Enemy"].sprite
-        self.players["Enemy"].enemy_sprite = self.players["Player"].sprite
+        self.players["Player"].enemy = self.players["Enemy"]
+        self.players["Enemy"].enemy = self.players["Player"]
 
-    def update_players(self):
-        self.players["Player"].update()
-        self.players["Enemy"].update()
-
-        agk.set_sprite_visible(self.players["Player"].sprite, 1)
-        #self.test_network()
 
     def init_controls(self):
         self.controls = GameControls()#
@@ -132,11 +141,13 @@ class Game:
         self.start_controls()
 
         if self.network_type == "host":
-            agk.message("im a host")
-            self.connect_players()
+            pass
+            #agk.message("im a host")
+            #self.connect_players()
         else:
-            agk.message("im a client")                 
-            self.connect_to_host()
+            pass
+            #agk.message("im a client")                 
+            #self.connect_to_host()
 
         self.vis_editor.open_scene(0)     
         self.update()
@@ -191,21 +202,44 @@ class Game:
         else:
             agk.set_sprite_position(self.enemy_garden, 0, 0)
 
+    def update_players(self):
+        self.players["Player"].update()
+        self.players["Enemy"].update()
+
+        agk.set_sprite_color_alpha(self.players["Player"].sprite, 255)
+        agk.set_text_color_alpha(self.players["Player"].name_text, 255)
+
+        agk.set_sprite_color_alpha(self.players["Enemy"].sprite, 255)
+        agk.set_text_color_alpha(self.players["Enemy"].name_text, 255)
+
+        #check_wall_collision(self.players["Player"].sprite, self.level_hedges)
+        #agk.print_value("hedges touched " + str(check_wall_collision(self.players["Player"].sprite, self.level_hedges)))
+
+        agk.print_value("agk.get_sprite_collision(self.players " + str(agk.get_sprite_collision(self.players["Player"].sprite, self.players["Enemy"].sprite)))
+
+        if self.players["Player"].danger_zone:
+            if agk.get_sprite_collision(self.players["Player"].sprite, self.players["Enemy"].sprite):
+                 self.players["Player"].status = "caught"
+
+
+        #self.test_network()
+
+
+
     def update(self):
         while True:
-            agk.print_value("This should be 60! " + str(agk.screen_fps()))
             self.network_clock.update()
             access_network = self.network_clock.check_pulse()
 
-            if access_network:
-                self.receive_server_data()
+         #   if access_network:
+               # self.receive_server_data()
 
             self.controls.update()
             self.update_players()
             self.update_level()
 
-            if access_network:
-                self.send_server_data()
+         #   if access_network:
+          #      self.send_server_data()
 
             self.vis_editor.update()
 

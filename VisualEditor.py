@@ -92,12 +92,14 @@ class VisualEditor:
         setup_scenes(self)
 
     def open_scene(self, scene_id):
-        print("self.scenes " + str(len(self.scenes)))
         self.VisualEditor_scene_id = scene_id
         set_scene(self, scene_id)
 
     def get_entity_id(self, entity_name, scene_id):
         return get_id(self, entity_name, scene_id)
+
+    def get_entity_exists(self, entity_name, scene_id):
+         return get_exists(self, entity_name, scene_id)
 
     def get_entity_kind(self, entity_name, scene_id):
         return get_kind(self, entity_name, scene_id)

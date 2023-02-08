@@ -22,906 +22,6 @@
 	<properties>
 			<type>sprite</>
 			<scene>0</>
-			<name>sprite 41</>
-			<x>1.0</>
-			<y>1.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 42</>
-			<x>640.0</>
-			<y>0.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 43</>
-			<x>1280.0</>
-			<y>-2.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 44</>
-			<x>0.0</>
-			<y>-324.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 45</>
-			<x>640.0</>
-			<y>-320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 46</>
-			<x>0.0</>
-			<y>320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 47</>
-			<x>1280.0</>
-			<y>-318.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 48</>
-			<x>640.0</>
-			<y>320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 49</>
-			<x>1280.0</>
-			<y>320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 50</>
-			<x>0.0</>
-			<y>640.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 51</>
-			<x>640.0</>
-			<y>640.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 52</>
-			<x>1280.0</>
-			<y>640.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 53</>
-			<x>-2.0</>
-			<y>960.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 54</>
-			<x>640.0</>
-			<y>960.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 55</>
-			<x>1728.0</>
-			<y>960.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 61</>
-			<x>1728.0</>
-			<y>-320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 62</>
-			<x>1728.0</>
-			<y>0.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 63</>
-			<x>1723.0</>
-			<y>320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>3</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 64</>
-			<x>1725.0</>
-			<y>640.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
-			<name>sprite 65</>
-			<x>1283.0</>
-			<y>961.0</>
-			<size x>729.0</>
-			<size y>327.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
-			<angle>0.0</>
-			<depth>5002</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>ground/grass2.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
 			<name>gate_1</>
 			<x>0.0</>
 			<y>64.0</>
@@ -1283,7 +383,7 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 78</>
-			<x>-0.0</>
+			<x>0.0</>
 			<y>512.0</>
 			<size x>70.0</>
 			<size y>70.0</>
@@ -1328,7 +428,7 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 79</>
-			<x>-0.0</>
+			<x>0.0</>
 			<y>576.0</>
 			<size x>70.0</>
 			<size y>70.0</>
@@ -1373,7 +473,7 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 80</>
-			<x>-0.0</>
+			<x>0.0</>
 			<y>640.0</>
 			<size x>70.0</>
 			<size y>70.0</>
@@ -1418,7 +518,7 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 81</>
-			<x>-0.0</>
+			<x>0.0</>
 			<y>704.0</>
 			<size x>70.0</>
 			<size y>70.0</>
@@ -1463,7 +563,7 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 82</>
-			<x>-0.0</>
+			<x>0.0</>
 			<y>768.0</>
 			<size x>70.0</>
 			<size y>70.0</>
@@ -2677,51 +1777,6 @@
 	<properties>
 			<type>sprite</>
 			<scene>0</>
-			<name>sprite 112</>
-			<x>1536.0</>
-			<y>1024.0</>
-			<size x>70.0</>
-			<size y>70.0</>
-			<scale x>1.0</>
-			<scale y>1.0</>
-			<offset x>35.0</>
-			<offset y>35.0</>
-			<angle>0.0</>
-			<depth>5000</>
-			<visible>1</>
-			<red>255</>
-			<green>255</>
-			<blue>255</>
-			<alpha>255</>
-			<locked>0</>
-			<fixed>0</>
-			<goto>0</>
-			<custom></>
-			<custom></>
-			<custom></>
-			<custom></>
-			<physics>0</>
-			<fliph>0</>
-			<flipv>0</>
-			<active>0</>
-			<collision>0</>
-			<angulardamping>0.0</>
-			<centreofmassx>0</>
-			<centreofmassy>0</>
-			<canrotate>1</>
-			<damping>0.0</>
-			<friction>0.0</>
-			<isbullet>0</>
-			<issensor>0</>
-			<mass>0.0</>
-			<restitution>0.0</>
-			<image>Walls/gateb003png.png</>
-	</properties>
-</entity>
-<entity>
-	<properties>
-			<type>sprite</>
-			<scene>0</>
 			<name>sprite 113</>
 			<x>1600.0</>
 			<y>1024.0</>
@@ -2749,7 +1804,7 @@
 			<fliph>0</>
 			<flipv>0</>
 			<active>0</>
-			<collision>3</>
+			<collision>0</>
 			<angulardamping>0.0</>
 			<centreofmassx>0</>
 			<centreofmassy>0</>
@@ -5152,17 +4207,17 @@
 	<properties>
 			<type>sprite</>
 			<scene>0</>
-			<name>sprite 167</>
-			<x>-704.0</>
-			<y>-320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
+			<name>sprite 122</>
+			<x>576.0</>
+			<y>704.0</>
+			<size x>96.0</>
+			<size y>96.0</>
 			<scale x>1.0</>
 			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
+			<offset x>48.0</>
+			<offset y>48.0</>
 			<angle>0.0</>
-			<depth>5002</>
+			<depth>5000</>
 			<visible>1</>
 			<red>255</>
 			<green>255</>
@@ -5190,7 +4245,1762 @@
 			<issensor>0</>
 			<mass>0.0</>
 			<restitution>0.0</>
-			<image>ground/grass2.png</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 124</>
+			<x>512.0</>
+			<y>704.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 125</>
+			<x>448.0</>
+			<y>704.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 126</>
+			<x>576.0</>
+			<y>768.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 127</>
+			<x>576.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 128</>
+			<x>448.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 129</>
+			<x>512.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 130</>
+			<x>576.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 131</>
+			<x>576.0</>
+			<y>448.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 132</>
+			<x>576.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 133</>
+			<x>576.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 134</>
+			<x>832.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 135</>
+			<x>768.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 136</>
+			<x>768.0</>
+			<y>448.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 137</>
+			<x>768.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 138</>
+			<x>768.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 139</>
+			<x>896.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 140</>
+			<x>512.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 141</>
+			<x>448.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 142</>
+			<x>448.0</>
+			<y>256.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 144</>
+			<x>256.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 149</>
+			<x>256.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 150</>
+			<x>192.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 151</>
+			<x>192.0</>
+			<y>256.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 152</>
+			<x>192.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 153</>
+			<x>64.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 154</>
+			<x>128.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 155</>
+			<x>256.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 156</>
+			<x>256.0</>
+			<y>640.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 157</>
+			<x>256.0</>
+			<y>704.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 158</>
+			<x>256.0</>
+			<y>768.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 160</>
+			<x>192.0</>
+			<y>704.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 161</>
+			<x>128.0</>
+			<y>704.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 162</>
+			<x>320.0</>
+			<y>960.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 163</>
+			<x>256.0</>
+			<y>960.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 164</>
+			<x>256.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 165</>
+			<x>640.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 166</>
+			<x>768.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 167</>
+			<x>768.0</>
+			<y>768.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 168</>
+			<x>704.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
 	</properties>
 </entity>
 <entity>
@@ -5198,16 +6008,16 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 169</>
-			<x>-704.0</>
-			<y>0.0</>
-			<size x>729.0</>
-			<size y>327.0</>
+			<x>768.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
 			<scale x>1.0</>
 			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
+			<offset x>48.0</>
+			<offset y>48.0</>
 			<angle>0.0</>
-			<depth>5002</>
+			<depth>5000</>
 			<visible>1</>
 			<red>255</>
 			<green>255</>
@@ -5235,7 +6045,7 @@
 			<issensor>0</>
 			<mass>0.0</>
 			<restitution>0.0</>
-			<image>ground/grass2.png</>
+			<image>ground/Trees3.png</>
 	</properties>
 </entity>
 <entity>
@@ -5243,16 +6053,16 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 170</>
-			<x>-704.0</>
-			<y>320.0</>
-			<size x>729.0</>
-			<size y>327.0</>
+			<x>768.0</>
+			<y>256.0</>
+			<size x>96.0</>
+			<size y>96.0</>
 			<scale x>1.0</>
 			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
+			<offset x>48.0</>
+			<offset y>48.0</>
 			<angle>0.0</>
-			<depth>5002</>
+			<depth>5000</>
 			<visible>1</>
 			<red>255</>
 			<green>255</>
@@ -5280,7 +6090,7 @@
 			<issensor>0</>
 			<mass>0.0</>
 			<restitution>0.0</>
-			<image>ground/grass2.png</>
+			<image>ground/Trees3.png</>
 	</properties>
 </entity>
 <entity>
@@ -5288,16 +6098,16 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 171</>
-			<x>-704.0</>
-			<y>640.0</>
-			<size x>729.0</>
-			<size y>327.0</>
+			<x>810.0</>
+			<y>292.0</>
+			<size x>96.0</>
+			<size y>96.0</>
 			<scale x>1.0</>
 			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
+			<offset x>48.0</>
+			<offset y>48.0</>
 			<angle>0.0</>
-			<depth>5002</>
+			<depth>5000</>
 			<visible>1</>
 			<red>255</>
 			<green>255</>
@@ -5325,7 +6135,7 @@
 			<issensor>0</>
 			<mass>0.0</>
 			<restitution>0.0</>
-			<image>ground/grass2.png</>
+			<image>ground/Trees3.png</>
 	</properties>
 </entity>
 <entity>
@@ -5333,16 +6143,16 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 172</>
-			<x>-704.0</>
-			<y>960.0</>
-			<size x>729.0</>
-			<size y>327.0</>
+			<x>960.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
 			<scale x>1.0</>
 			<scale y>1.0</>
-			<offset x>364.5</>
-			<offset y>163.5</>
+			<offset x>48.0</>
+			<offset y>48.0</>
 			<angle>0.0</>
-			<depth>5002</>
+			<depth>5000</>
 			<visible>1</>
 			<red>255</>
 			<green>255</>
@@ -5370,7 +6180,2977 @@
 			<issensor>0</>
 			<mass>0.0</>
 			<restitution>0.0</>
-			<image>ground/grass2.png</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 173</>
+			<x>768.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 174</>
+			<x>768.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 175</>
+			<x>832.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 176</>
+			<x>896.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 177</>
+			<x>960.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 178</>
+			<x>960.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 179</>
+			<x>960.0</>
+			<y>896.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 180</>
+			<x>960.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 181</>
+			<x>704.0</>
+			<y>896.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 182</>
+			<x>704.0</>
+			<y>960.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 183</>
+			<x>1280.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 184</>
+			<x>960.0</>
+			<y>768.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 185</>
+			<x>960.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 186</>
+			<x>1024.0</>
+			<y>768.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 187</>
+			<x>1600.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 188</>
+			<x>1664.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 189</>
+			<x>1600.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 190</>
+			<x>1600.0</>
+			<y>256.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 191</>
+			<x>1664.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 192</>
+			<x>1600.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 193</>
+			<x>1536.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 194</>
+			<x>1472.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 195</>
+			<x>1472.0</>
+			<y>640.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 196</>
+			<x>1280.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 197</>
+			<x>1600.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 198</>
+			<x>1408.0</>
+			<y>64.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 199</>
+			<x>1408.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 200</>
+			<x>1408.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 201</>
+			<x>1344.0</>
+			<y>64.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 202</>
+			<x>1024.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 203</>
+			<x>1088.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 204</>
+			<x>1152.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 205</>
+			<x>1216.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 206</>
+			<x>1280.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 207</>
+			<x>1344.0</>
+			<y>128.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 208</>
+			<x>1792.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 209</>
+			<x>1728.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 210</>
+			<x>1664.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 211</>
+			<x>1600.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 212</>
+			<x>1536.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 213</>
+			<x>1536.0</>
+			<y>896.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 214</>
+			<x>1344.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 215</>
+			<x>1472.0</>
+			<y>896.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 173</>
+			<x>1536.0</>
+			<y>1024.0</>
+			<size x>70.0</>
+			<size y>70.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>35.0</>
+			<offset y>35.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>Walls/gateb003png.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 217</>
+			<x>1408.0</>
+			<y>896.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 218</>
+			<x>1344.0</>
+			<y>896.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 219</>
+			<x>1344.0</>
+			<y>832.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 220</>
+			<x>1600.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 221</>
+			<x>1600.0</>
+			<y>448.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 222</>
+			<x>1600.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 223</>
+			<x>1280.0</>
+			<y>768.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 224</>
+			<x>1152.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 225</>
+			<x>1152.0</>
+			<y>448.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 226</>
+			<x>1152.0</>
+			<y>512.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 227</>
+			<x>1152.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 228</>
+			<x>1216.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 229</>
+			<x>1280.0</>
+			<y>576.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 230</>
+			<x>1216.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 231</>
+			<x>1152.0</>
+			<y>320.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 232</>
+			<x>384.0</>
+			<y>960.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 233</>
+			<x>1280.0</>
+			<y>896.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 234</>
+			<x>448.0</>
+			<y>64.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 235</>
+			<x>512.0</>
+			<y>64.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 236</>
+			<x>576.0</>
+			<y>64.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 237</>
+			<x>1728.0</>
+			<y>192.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
+	</properties>
+</entity>
+<entity>
+	<properties>
+			<type>sprite</>
+			<scene>0</>
+			<name>sprite 238</>
+			<x>1728.0</>
+			<y>384.0</>
+			<size x>96.0</>
+			<size y>96.0</>
+			<scale x>1.0</>
+			<scale y>1.0</>
+			<offset x>48.0</>
+			<offset y>48.0</>
+			<angle>0.0</>
+			<depth>5000</>
+			<visible>1</>
+			<red>255</>
+			<green>255</>
+			<blue>255</>
+			<alpha>255</>
+			<locked>0</>
+			<fixed>0</>
+			<goto>0</>
+			<custom></>
+			<custom></>
+			<custom></>
+			<custom></>
+			<physics>0</>
+			<fliph>0</>
+			<flipv>0</>
+			<active>0</>
+			<collision>0</>
+			<angulardamping>0.0</>
+			<centreofmassx>0</>
+			<centreofmassy>0</>
+			<canrotate>1</>
+			<damping>0.0</>
+			<friction>0.0</>
+			<isbullet>0</>
+			<issensor>0</>
+			<mass>0.0</>
+			<restitution>0.0</>
+			<image>ground/Trees3.png</>
 	</properties>
 </entity>
 <entity>
@@ -5379,9 +9159,9 @@
 			<scene>1</>
 			<name>text 0</>
 			<x>64.0</>
-			<y>-0.0</>
-			<size x>1797.8</>
-			<size y>264.9</>
+			<y>0.0</>
+			<size x>1786.7</>
+			<size y>261.1</>
 			<scale x>1.0</>
 			<scale y>1.0</>
 			<offset x>0.0</>
@@ -5402,7 +9182,7 @@
 			<custom></>
 			<text>Midsomer Pluckers</>
 			<alignment>0</>
-			<text size>264.9</>
+			<text size>260.4</>
 	</properties>
 </entity>
 <entity>
@@ -5432,7 +9212,11 @@
 			<custom></>
 			<custom></>
 			<custom></>
-			<text></>
+			<text>
+
+
+
+</>
 			<edit size>148.4</>
 			<edit colour red>0</>
 			<edit colour green>0</>
@@ -5464,8 +9248,8 @@
 			<name>text 1</>
 			<x>616.0</>
 			<y>384.0</>
-			<size x>667.0</>
-			<size y>108.9</>
+			<size x>669.6</>
+			<size y>109.8</>
 			<scale x>1.0</>
 			<scale y>1.0</>
 			<offset x>0.0</>
@@ -5501,7 +9285,7 @@
 			<scale x>1.0</>
 			<scale y>1.0</>
 			<offset x>249.0</>
-			<offset y>90.7</>
+			<offset y>90.8</>
 			<angle>0.0</>
 			<depth>5000</>
 			<visible>1</>
@@ -5546,7 +9330,7 @@
 			<scale x>1.0</>
 			<scale y>1.0</>
 			<offset x>249.0</>
-			<offset y>90.7</>
+			<offset y>90.8</>
 			<angle>0.0</>
 			<depth>5000</>
 			<visible>1</>
