@@ -16,6 +16,7 @@ import requests
 from networking import Network
 import json
 from CollisionDetection import *
+from Object import Object
 
 class Game:
     def __init__(self, vis_editor, type, user_name):
@@ -53,7 +54,10 @@ class Game:
             sprite_name = "sprite " + str(i)
             if(self.vis_editor.get_entity_exists(sprite_name , 0)):
                 sprite = self.vis_editor.get_entity_id(sprite_name , 0)
-                self.level_hedges.append(sprite)
+                object = Object()
+                object.init_from_sprite(sprite)
+                self.level_hedges.append(object)
+    
 
 
     def connect_players(self):
@@ -120,8 +124,6 @@ class Game:
             self.players["Player"].garden_side = "left"
             
         self.players["Player"].spawn()
-
-
         self.players["Enemy"] = Player()
         self.players["Enemy"].create("Fannybaws")
         self.players["Enemy"].spawn()
@@ -131,7 +133,7 @@ class Game:
 
 
     def init_controls(self):
-        self.controls = GameControls()#
+        self.controls = GameControls()
 
 
     def start_controls(self):
@@ -149,7 +151,6 @@ class Game:
             #agk.message("im a client")                 
             #self.connect_to_host()
 
-        self.vis_editor.open_scene(0)     
         self.update()
 
     def receive_server_data(self):
@@ -196,29 +197,35 @@ class Game:
         # self.players["Player"].position.Y   
         # self.players["Enemy"].flower_status
 
+    def update_collisions(self):
+        self.players["Player"].object.position = where_can_i_get_to(self.players["Player"].object, self.level_hedges)
+
+
     def update_level(self):
         if self.players["Player"].garden_side == "left":
             agk.set_sprite_position(self.enemy_garden, agk.get_virtual_width() / 2, 0)
         else:
             agk.set_sprite_position(self.enemy_garden, 0, 0)
 
+        #self.update_collisions()
+
+
     def update_players(self):
         self.players["Player"].update()
         self.players["Enemy"].update()
 
-        agk.set_sprite_color_alpha(self.players["Player"].sprite, 255)
+        agk.set_sprite_color_alpha(self.players["Player"].object.sprite, 255)
         agk.set_text_color_alpha(self.players["Player"].name_text, 255)
 
-        agk.set_sprite_color_alpha(self.players["Enemy"].sprite, 255)
-        agk.set_text_color_alpha(self.players["Enemy"].name_text, 255)
+        #agk.set_sprite_color_alpha(self.players["Enemy"].sprite, 255)
+        #agk.set_text_color_alpha(self.players["Enemy"].name_text, 255)
 
         #check_wall_collision(self.players["Player"].sprite, self.level_hedges)
         #agk.print_value("hedges touched " + str(check_wall_collision(self.players["Player"].sprite, self.level_hedges)))
 
-        agk.print_value("agk.get_sprite_collision(self.players " + str(agk.get_sprite_collision(self.players["Player"].sprite, self.players["Enemy"].sprite)))
 
         if self.players["Player"].danger_zone:
-            if agk.get_sprite_collision(self.players["Player"].sprite, self.players["Enemy"].sprite):
+            if agk.get_sprite_collision(self.players["Player"].object.sprite, self.players["Enemy"].object.sprite):
                  self.players["Player"].status = "caught"
 
 

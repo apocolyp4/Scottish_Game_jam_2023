@@ -8,3 +8,4 @@ class Vector3D:
         self.X = x
         self.Y = y
         self.Z = z
+

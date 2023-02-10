@@ -6,10 +6,12 @@ from copy import copy
 from Vectors import Vector2D
 from Stopwatch import Stopwatch
 from SpriteAnimation import SpriteAnimation
+from Object import Object
 import random
 
 class Player:
     def __init__(self):
+        self.object = Object()
         self.see_enemy = False
         self.danger_zone = False
         self.name_text = -1
@@ -23,7 +25,9 @@ class Player:
         self.enemy = -1
         self.name = ""
         self.health = 100
-        self.position = Vector2D(100, 200)
+        self.position = Vector2D(0, 0)
+        self.last_position = Vector2D(0, 0)
+        self.hit_box = -1
         self.angle = 0
         self.flower_status = "Safe"
         self.timer = Stopwatch()
@@ -33,12 +37,12 @@ class Player:
     def spawn(self):
         self.status = "idle"
         if self.garden_side == "left":
-            self.position.X = 60
-            self.position.Y = agk.get_virtual_height() / 2
+            self.object.position.X = 60
+            self.object.position.Y = agk.get_virtual_height() / 2
             self.direction = "east"
         else:
-            self.position.X = agk.get_virtual_width() - 100
-            self.position.Y = agk.get_virtual_height() / 2 
+            self.object.position.X = agk.get_virtual_width() - 100
+            self.object.position.Y = agk.get_virtual_height() / 2 
             self.direction = "west"         
 
     def create(self, name):
@@ -48,14 +52,14 @@ class Player:
         self.create_sprite()
         self.create_animations()
         self.set_animation(self.get_animation_name())
-        width = agk.get_sprite_width(self.sprite) / 1.5
-        height = agk.get_sprite_height(self.sprite) / 1.5
-        agk.set_sprite_size(self.sprite, width, height)
-        agk.set_sprite_shape(self.sprite, 1)
+        width = agk.get_sprite_width(self.object.sprite) / 1.5
+        height = agk.get_sprite_height(self.object.sprite) / 1.5
+        agk.set_sprite_size(self.object.sprite, width, height)
+        agk.set_sprite_shape(self.object.sprite, 1)
 
     def create_sprite(self):
         image = agk.load_image("images/player/player.png")
-        self.sprite = agk.create_sprite(image)
+        self.object.sprite = agk.create_sprite(image)
 
         #image = agk.load_image("block.png")
         #self.debug_ray_cast = agk.create_sprite(image)
@@ -68,18 +72,18 @@ class Player:
         agk.set_text_alignment(self.name_text, 1)
 
     def create_animations(self):
-        agk.set_sprite_animation(self.sprite, 64, 128, 64)
-        agk.set_sprite_frame(self.sprite, 1)
+        agk.set_sprite_animation(self.object.sprite, 64, 128, 64)
+        agk.set_sprite_frame(self.object.sprite, 1)
 
         for i in range(1, 15):
             image_name = "images/player/down-walk" + str(i)+ ".png"
             image = agk.load_image(image_name)
-            agk.add_sprite_animation_frame(self.sprite, image)
+            agk.add_sprite_animation_frame(self.object.sprite, image)
 
         for i in range(1, 15):
             image_name = "images/player/up-walk" + str(i)+ ".png"
             image = agk.load_image(image_name)
-            agk.add_sprite_animation_frame(self.sprite, image)
+            agk.add_sprite_animation_frame(self.object.sprite, image)
 
         self.animations["idle south"] = SpriteAnimation(1, 4, 5, 1)
         self.animations["idle north"] = SpriteAnimation(5, 8, 5, 1)
@@ -107,28 +111,28 @@ class Player:
             fps = self.animations[animation_name].fps
             looped = self.animations[animation_name].looped
             self.current_animation = animation_name      
-            agk.play_sprite(self.sprite, fps, looped, start_frame, end_frame)
+            agk.play_sprite(self.object.sprite, fps, looped, start_frame, end_frame)
        # else:
            # print("not found animation " + animation_name)
            # print(self.animations.keys())
 
     def update_angle(self):
         if self.direction == "north":
-            self.angle = 0
+            self.object.angle = 0
         elif self.direction == "north east":
-            self.angle = 45
+            self.object.angle = 45
         elif self.direction == "east":
-            self.angle = 90
+            self.object.angle = 90
         elif self.direction == "south east":
-            self.angle = 135
+            self.object.angle = 135
         elif self.direction == "south":
-            self.angle = 180
+            self.object.angle = 180
         elif self.direction == "south west":
-            self.angle = 225
+            self.object.angle = 225
         elif self.direction == "west":
-            self.angle = 270
+            self.object.angle = 270
         elif self.direction == "north west":
-            self.angle = 315
+            self.object.angle = 315
 
 
     def get_animation_name(self):
@@ -137,20 +141,19 @@ class Player:
 
     def update_position(self):
 
-        if self.position.Y < 10:
-            self.position.Y = 10
+        if self.object.position.Y < 10:
+            self.object.position.Y = 10
 
-        if self.position.Y > 970:
-            self.position.Y = 970  
+        if self.object.position.Y > 970:
+            self.object.position.Y = 970  
 
-        if self.position.X < 40:
-            self.position.X = 40
+        if self.object.position.X < 40:
+            self.object.position.X = 40
 
-        if self.position.X > 1840:
-            self.position.X = 1840
+        if self.object.position.X > 1840:
+            self.object.position.X = 1840
 
-        agk.set_sprite_position(self.sprite, self.position.X, self.position.Y)
-        #agk.set_sprite_position(self.sprite, 200, 300)
+        self.object.update_position()
 
     def update_animations(self):
         if self.get_animation_name() != self.current_animation:
@@ -158,19 +161,19 @@ class Player:
 
     def update_name_text(self):
         agk.set_text_string(self.name_text, self.name)
-        x = self.position.X + (agk.get_sprite_width(self.sprite) / 2)
-        y = self.position.Y - 20
+        x = self.object.position.X + (agk.get_sprite_width(self.object.sprite) / 2)
+        y = self.object.position.Y - 20
         agk.set_text_position(self.name_text, x, y)
 
     def update_ray_cast(self):
         self.see_enemy = False
 
-        x = self.position.X + (agk.get_sprite_width(self.sprite) / 2)
-        y = self.position.Y + (agk.get_sprite_height(self.sprite) / 2)
+        x = self.object.position.X + (agk.get_sprite_width(self.object.sprite) / 2)
+        y = self.object.position.Y + (agk.get_sprite_height(self.object.sprite) / 2)
 
 
         sweep_range = 120
-        angle = self.angle - (sweep_range / 2)
+        angle = self.object.angle - (sweep_range / 2)
         sweep_step = 5
         sweep_steps = int(sweep_range / sweep_step)
 
@@ -183,11 +186,11 @@ class Player:
             angle += sweep_step
 
             if agk.sprite_ray_cast( x, y, x2, y2 ) == 1:        
-                if agk.get_ray_cast_sprite_id() == self.enemy.sprite:
+                if agk.get_ray_cast_sprite_id() == self.enemy.object.sprite:
                     self.see_enemy = True
                     break
 
-        alpha = agk.get_sprite_color_alpha(self.enemy.sprite)
+        alpha = agk.get_sprite_color_alpha(self.enemy.object.sprite)
         alpha_step = 10
 
         if self.see_enemy:
@@ -200,12 +203,12 @@ class Player:
             if alpha < 0:
                 alpha = 0
 
-        agk.set_sprite_color_alpha(self.enemy.sprite, alpha)   
+        agk.set_sprite_color_alpha(self.enemy.object.sprite, alpha)   
         agk.set_text_color_alpha(self.enemy.name_text, alpha)        
 
     def check_in_danger_zone(self):
         self.danger_zone = False   
-        x = self.position.X + (agk.get_sprite_width(self.sprite) / 2)
+        x = self.position.X + (agk.get_sprite_width(self.object.sprite) / 2)
 
         if self.garden_side == "right":
             if x < agk.get_virtual_width() / 2:

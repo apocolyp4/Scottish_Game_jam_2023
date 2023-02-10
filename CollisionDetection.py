@@ -1,6 +1,9 @@
 import appgamekit as agk
 from calculations import *
+from Vectors import Vector2D, Vector3D
+from Tools import *
 import copy
+import math
 
 def get_text_point_collision(text, point_x, point_y):
     width = text.get_width()
@@ -89,4 +92,85 @@ def check_wall_collision(sprite_id, walls):
             return True
 
     return False
+
+
+def where_can_i_get_to(object, obstruction_objects):
+    movement_to_try = Vector2D(0, 0)
+    movement_to_try.X = object.position.X - object.last_position.X
+    movement_to_try.Y = object.position.Y - object.last_position.Y
+    furthest_available_location_so_far = Vector2D(0, 0)
+    furthest_available_location_so_far = object.last_position
+
+    temp_object = copy.deepcopy(object)
+    length = get_distance(0, 0, movement_to_try.X, movement_to_try.Y)
+
+    number_of_steps_to_break_movement_into = math.floor(length * 2) + 1
+    one_step = Vector2D(0, 0)
+    one_step.X = movement_to_try.X / number_of_steps_to_break_movement_into
+    one_step.Y = movement_to_try.Y / number_of_steps_to_break_movement_into
+
+    agk.print_value("number_of_steps_to_break_movement_into " + str(number_of_steps_to_break_movement_into))
+
+    for i in range(0, number_of_steps_to_break_movement_into):
+        position_to_try = Vector2D(0, 0)
+        position_to_try.X = object.last_position.X + (one_step.X * i)
+        position_to_try.Y = object.last_position.Y + (one_step.Y * i)
+        agk.set_sprite_position(object.sprite, position_to_try.X, position_to_try.Y)
+
+        collision = check_tile_collisions(object, obstruction_objects, "Sprite")
+        if not collision:
+            furthest_available_location_so_far = position_to_try
+        else:
+            if movement_to_try.X != 0.0 and movement_to_try.Y != 0.0:
+                is_diagonal_move = True
+            else:
+                is_diagonal_move = False
+
+            agk.print_value("is_diagonal_move " + str(is_diagonal_move))
+
+            if is_diagonal_move:
+                steps_left = number_of_steps_to_break_movement_into - (i - 1)        
+                remaining_horizontal_movement = Vector2D(0, 0)
+                remaining_horizontal_movement.X = one_step.X * steps_left
+                remaining_horizontal_movement.Y = 0.0
+
+                final_position_if_moving_horizontally = Vector2D(0, 0)
+                final_position_if_moving_horizontally.X = furthest_available_location_so_far.X + remaining_horizontal_movement.X
+                final_position_if_moving_horizontally.Y = furthest_available_location_so_far.Y + remaining_horizontal_movement.Y
+
+                temp_object.last_position = furthest_available_location_so_far
+                temp_object.position = final_position_if_moving_horizontally
+                furthest_available_location_so_far = where_can_i_get_to(temp_object)
+            
+                remaining_vertical_movement = Vector2D(0, 0)
+                remaining_vertical_movement.X = 0.0
+                remaining_vertical_movement.Y = one_step.Y * steps_left
+
+                final_position_if_moving_vertically = Vector2D(0, 0)
+                final_position_if_moving_vertically.X = furthest_available_location_so_far.X  + remaining_vertical_movement.X 
+                final_position_if_moving_vertically.Y = furthest_available_location_so_far.Y  + remaining_vertical_movement.Y 
+
+                temp_object.last_position = furthest_available_location_so_far
+                temp_object.position = final_position_if_moving_vertically
+                furthest_available_location_so_far = where_can_i_get_to(temp_object)
+
+    return furthest_available_location_so_far
+
+
+
+def check_tile_collisions(object, obstruction_objects, collision_mode):
+    for obstruction_object in obstruction_objects:
+        if collision_mode == "Sprite":
+            if check_sprite_collision(object.sprite, obstruction_object.sprite):
+                return True
+
+
+    return False
+
+
+def check_sprite_collision(sprite1, sprite2):
+    if agk.get_sprite_collision(sprite1, sprite2) == 1:
+        return True
+    else:
+        return False
 

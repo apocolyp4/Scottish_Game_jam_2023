@@ -7313,8 +7313,8 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 198</>
-			<x>1408.0</>
-			<y>64.0</>
+			<x>192.0</>
+			<y>128.0</>
 			<size x>96.0</>
 			<size y>96.0</>
 			<scale x>1.0</>
@@ -7448,8 +7448,8 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 201</>
-			<x>1344.0</>
-			<y>64.0</>
+			<x>1280.0</>
+			<y>192.0</>
 			<size x>96.0</>
 			<size y>96.0</>
 			<scale x>1.0</>
@@ -7583,8 +7583,8 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 204</>
-			<x>1152.0</>
-			<y>128.0</>
+			<x>1344.0</>
+			<y>384.0</>
 			<size x>96.0</>
 			<size y>96.0</>
 			<scale x>1.0</>
@@ -7628,8 +7628,8 @@
 			<type>sprite</>
 			<scene>0</>
 			<name>sprite 205</>
-			<x>1216.0</>
-			<y>128.0</>
+			<x>192.0</>
+			<y>960.0</>
 			<size x>96.0</>
 			<size y>96.0</>
 			<scale x>1.0</>
@@ -9182,7 +9182,7 @@
 			<custom></>
 			<text>Midsomer Pluckers</>
 			<alignment>0</>
-			<text size>260.4</>
+			<text size>261.1</>
 	</properties>
 </entity>
 <entity>
@@ -9213,6 +9213,8 @@
 			<custom></>
 			<custom></>
 			<text>
+
+
 
 
 
@@ -9270,7 +9272,7 @@
 			<custom></>
 			<text>Enter Your Name</>
 			<alignment>0</>
-			<text size>108.9</>
+			<text size>109.8</>
 	</properties>
 </entity>
 <entity>
