@@ -104,7 +104,8 @@ class VisualEditor:
     def get_entity_kind(self, entity_name, scene_id):
         return get_kind(self, entity_name, scene_id)
 
-
+    def get_scene_sprites(self, scene_id):
+        return get_sprite_list(self, scene_id)
 
     def update(self):
         for image_button in self.VisualEditor_image_buttons:

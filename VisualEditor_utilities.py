@@ -27,6 +27,15 @@ def get_exists(self, entity_name, scene_id):
 
     return False
 
+def get_sprite_list(self, scene_id):
+    sprite_list = []
+
+    for scene_entity in self.scenes[scene_id].entities:
+        entity = self.VisualEditor_Entities[scene_entity.index]
+        if entity.sType == "sprite":
+            sprite_list.append(scene_entity.id)
+
+    return sprite_list
 
 def get_kind(self, entity_name, scene_id):
     if scene_id < 0 or scene_id > len(self.scenes) - 1:

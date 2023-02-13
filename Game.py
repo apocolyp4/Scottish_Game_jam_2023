@@ -49,11 +49,14 @@ class Game:
 
     def init_hedges(self):
         self.level_hedges = []
-        #hack to get round visual editor bug that sets all sprites to polygon shape
-        for i in range(122, 239):
-            sprite_name = "sprite " + str(i)
-            if(self.vis_editor.get_entity_exists(sprite_name , 0)):
-                sprite = self.vis_editor.get_entity_id(sprite_name , 0)
+
+        self.level_sprites = self.vis_editor.get_scene_sprites(0)
+
+        for sprite in self.level_sprites:
+            image_no = agk.get_sprite_image_id(sprite)
+            image_name = agk.get_image_filename(image_no).split("/")
+            image_name = image_name[len(image_name) - 1]
+            if image_name == "Trees3.png":
                 object = Object()
                 object.init_from_sprite(sprite)
                 self.level_hedges.append(object)
