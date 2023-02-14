@@ -33,7 +33,6 @@ class Object:
  
     def update_position(self):
         agk.set_sprite_position(self.sprite, self.position.X, self.position.Y)
-        self.last_position = self.position
         
         
 

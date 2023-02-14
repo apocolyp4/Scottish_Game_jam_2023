@@ -1,6 +1,7 @@
 import appgamekit as agk
 from Controls import Controls
 from calculations import *
+import copy
 
 class GameControls:
     def __init__(self):      
@@ -48,10 +49,14 @@ class GameControls:
 
     def move(self):
         if self.gamepad.left_force > 0.2:
+            
             self.direction()
             speed = self.player.max_speed * self.gamepad.left_force
             if self.player.danger_zone:
                 speed *= 0.8
+            
+            self.player.object.last_position = copy.deepcopy(self.player.object.position)
+            
 
             velocity = get_velocity(self.player.object.angle, speed)
             self.player.object.position.X += velocity[0]
@@ -60,6 +65,8 @@ class GameControls:
         else:
             self.player.status = "idle"
 
+
+        agk.print_value(str((self.player.object.last_position == self.player.object.position)))
 
        # else:
            # self.player.status = "idle"

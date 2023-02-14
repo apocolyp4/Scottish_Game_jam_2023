@@ -54,12 +54,13 @@ class Game:
 
         for sprite in self.level_sprites:
             image_no = agk.get_sprite_image_id(sprite)
-            image_name = agk.get_image_filename(image_no).split("/")
-            image_name = image_name[len(image_name) - 1]
-            if image_name == "Trees3.png":
-                object = Object()
-                object.init_from_sprite(sprite)
-                self.level_hedges.append(object)
+            if agk.get_image_exists(image_no):
+                image_name = agk.get_image_filename(image_no).split("/")
+                image_name = image_name[len(image_name) - 1]
+                if image_name == "Trees3.png":
+                    object = Object()
+                    object.init_from_sprite(sprite)
+                    self.level_hedges.append(object)
     
 
 
@@ -201,7 +202,9 @@ class Game:
         # self.players["Enemy"].flower_status
 
     def update_collisions(self):
-        self.players["Player"].object.position = where_can_i_get_to(self.players["Player"].object, self.level_hedges)
+        collision = check_tile_collisions(self.players["Player"].object, self.level_hedges, "Sprite")
+        if collision:
+            self.players["Player"].object.position = where_can_i_get_to(self.players["Player"].object, self.level_hedges)
 
 
     def update_level(self):
@@ -210,7 +213,7 @@ class Game:
         else:
             agk.set_sprite_position(self.enemy_garden, 0, 0)
 
-        #self.update_collisions()
+        self.update_collisions()
 
 
     def update_players(self):

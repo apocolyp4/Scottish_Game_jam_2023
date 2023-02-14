@@ -99,7 +99,7 @@ def where_can_i_get_to(object, obstruction_objects):
     movement_to_try.X = object.position.X - object.last_position.X
     movement_to_try.Y = object.position.Y - object.last_position.Y
     furthest_available_location_so_far = Vector2D(0, 0)
-    furthest_available_location_so_far = object.last_position
+    furthest_available_location_so_far = copy.deepcopy(object.last_position)
 
     temp_object = copy.deepcopy(object)
     length = get_distance(0, 0, movement_to_try.X, movement_to_try.Y)
@@ -108,8 +108,6 @@ def where_can_i_get_to(object, obstruction_objects):
     one_step = Vector2D(0, 0)
     one_step.X = movement_to_try.X / number_of_steps_to_break_movement_into
     one_step.Y = movement_to_try.Y / number_of_steps_to_break_movement_into
-
-    agk.print_value("number_of_steps_to_break_movement_into " + str(number_of_steps_to_break_movement_into))
 
     for i in range(0, number_of_steps_to_break_movement_into):
         position_to_try = Vector2D(0, 0)
@@ -126,8 +124,6 @@ def where_can_i_get_to(object, obstruction_objects):
             else:
                 is_diagonal_move = False
 
-            agk.print_value("is_diagonal_move " + str(is_diagonal_move))
-
             if is_diagonal_move:
                 steps_left = number_of_steps_to_break_movement_into - (i - 1)        
                 remaining_horizontal_movement = Vector2D(0, 0)
@@ -138,21 +134,22 @@ def where_can_i_get_to(object, obstruction_objects):
                 final_position_if_moving_horizontally.X = furthest_available_location_so_far.X + remaining_horizontal_movement.X
                 final_position_if_moving_horizontally.Y = furthest_available_location_so_far.Y + remaining_horizontal_movement.Y
 
-                temp_object.last_position = furthest_available_location_so_far
-                temp_object.position = final_position_if_moving_horizontally
-                furthest_available_location_so_far = where_can_i_get_to(temp_object)
-            
+                temp_object.last_position = copy.deepcopy(furthest_available_location_so_far)
+                temp_object.position = copy.deepcopy(final_position_if_moving_horizontally)
+
+                furthest_available_location_so_far = where_can_i_get_to(temp_object, obstruction_objects)           
+
                 remaining_vertical_movement = Vector2D(0, 0)
                 remaining_vertical_movement.X = 0.0
                 remaining_vertical_movement.Y = one_step.Y * steps_left
-
+               
                 final_position_if_moving_vertically = Vector2D(0, 0)
                 final_position_if_moving_vertically.X = furthest_available_location_so_far.X  + remaining_vertical_movement.X 
                 final_position_if_moving_vertically.Y = furthest_available_location_so_far.Y  + remaining_vertical_movement.Y 
 
-                temp_object.last_position = furthest_available_location_so_far
-                temp_object.position = final_position_if_moving_vertically
-                furthest_available_location_so_far = where_can_i_get_to(temp_object)
+                temp_object.last_position = copy.deepcopy(furthest_available_location_so_far)
+                temp_object.position = copy.deepcopy(final_position_if_moving_vertically)
+                furthest_available_location_so_far = where_can_i_get_to(temp_object, obstruction_objects)
 
     return furthest_available_location_so_far
 
